@@ -1,5 +1,5 @@
 
-@echo off
+rem @echo off
 
 rem H is the destination game folder
 rem GAMEDIR is the name of the mod folder (usually the mod name)
@@ -13,9 +13,9 @@ set GAMEDATA="GameData"
 set VERSIONFILE=%GAMEDIR%.version
 
 copy /y  FruitKocktail.version  %GAMEDATA%\%GAMEDIR%
-copy /y  README.md %GAMEDATA%\%GAMEDIR%\%3
-copy /y  COPYING %GAMEDATA%\%GAMEDIR%\%3
+rem copy /y  README.md %GAMEDATA%\%GAMEDIR%\%3
+rem copy /y  COPYING %GAMEDATA%\%GAMEDIR%\%3
 
 xcopy /y /s /I %GAMEDATA%\%GAMEDIR% "%H%\GameData\%GAMEDIR%"
 
-rem pause
+ pause
