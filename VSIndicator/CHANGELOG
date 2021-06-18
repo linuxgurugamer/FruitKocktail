@@ -1,0 +1,26 @@
+Changelog
+
+1.2.1
+	Adoption by Linuxgurugamer
+	Added support for ToolbarController
+	Added support for ClickThroughBlocker
+	Added code to hide window when game paused
+
+v1.2.0
+	added option to specify a "safe" velocity and assign an alternative colour for reference
+	redesigned menu to incorporate the new features
+
+
+v1.1.1
+	fixed bug/issue of selected colours not being saved consistently when used with some other mods 
+
+v1.1.0
+	added ability to select custom colour for both ascending and descending displays
+	added toolbar button to access colour options
+	added pause menu options button to hide toolbar button when no longer required
+	fixed bugs involving switching options
+	fixed bugs involving poor memory allocation
+	fixed bugs involving persistence
+
+v1.0.0
+	initial release

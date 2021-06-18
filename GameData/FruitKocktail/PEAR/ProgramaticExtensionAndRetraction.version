@@ -1,0 +1,15 @@
+{
+  "NAME": "ProgramaticExtensionAndRetraction",
+  "URL": "http://ksp.spacetux.net/avc/ProgramaticExtensionAndRetraction",
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 0,
+    "PATCH": 2,
+    "BUILD": 0
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 11,
+    "PATCH": 2
+  }
+}

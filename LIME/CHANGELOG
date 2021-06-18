@@ -1,0 +1,25 @@
+Changelog
+
+1.0.0
+	initial release
+
+1.0.1
+	recompile for KSP 1.11.2
+
+1.1.0
+	added toolbar button with options to select Sunrise (stock), Sunny (ie LIME Time), Sunset & Midnight.
+
+1.1.1
+	toolbar button fix
+
+1.1.2
+	toolbar button fix (properly this time)
+
+1.1.3
+	Adoption by Linuxgurugamer
+	Added support for Toolbarcontroller
+	Added support for ClickthroughBlocker
+	Merged both classes into a single class to remove an unnecessary MonoBehaviour
+	Added AssemblyVersion.tt
+	Added InstallChecker
+	Removed unnecessary checks for being at the spacecenter

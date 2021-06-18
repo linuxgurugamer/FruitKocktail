@@ -1,0 +1,17 @@
+Changelog
+
+v1.0.0
+	initial release
+
+v1.0.1
+	fixed bug with toolbar button not being destroyed properly
+
+1.0.2
+	Adoption by Linuxgurugamer
+	Added support for ToolbarController
+	Added support for ClickThroughBlocker
+	Added GameData
+	Added local build files
+	added InstallChecker
+	Added AssemblyVersion.tt
+	Added code to hide window when game is paused, UI is hidden or GUI is locked

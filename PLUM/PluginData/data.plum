@@ -1,0 +1,153 @@
+DATA
+{
+	CUSTOMSETTING
+	{
+		id = 1;							// DON'T change this!
+		name = Custom 1;				// custom name, can be anything
+		gravity =9.81;					// custom gravity, to 2 decimal places recognised by PLUM
+		airDensity =1.22498;			// custom air density, to 5 decimal places recognised
+		chute0 = 482.427;				// mk16 	      
+		chute1 = 431.714;				// mk2r					custom drag constant 
+		chute2 = 696.373;				// mk16xl				all chutes to 3 decimal places
+		chute3 = 11.691;				// mk25
+		chute4 = 12.527;				// mk12r
+	
+	}
+
+	CUSTOMSETTING
+	{
+		id = 2;
+		name = Custom 2;
+		gravity = 9.81;
+		airDensity =1.22498;
+		chute0 = 482.427;
+		chute1 = 431.714;
+		chute2 = 696.373;
+		chute3 = 11.691;
+		chute4 = 12.527;
+	
+	}
+
+	CUSTOMSETTING
+	{
+		id = 3;
+		name = Custom 3;
+		gravity = 9.81;
+		airDensity = 1.22498;
+		chute0 = 482.427;
+		chute1 = 431.714;
+		chute2 = 696.373;
+		chute3 = 11.691;
+		chute4 = 12.527;
+	
+	}
+
+	CUSTOMSETTING
+	{
+		id = 4;
+		name = Custom 4;
+		gravity = 9.81;
+		airDensity = 1.22498;
+		chute0 = 482.427;
+		chute1 = 431.714;
+		chute2 = 696.373;
+		chute3 = 11.691;
+		chute4 = 12.527;
+	
+	}
+
+	CUSTOMSETTING
+	{
+		id = 5;
+		name = Custom 5;
+		gravity = 9.81;
+		airDensity = 1.22498;
+		chute0 = 482.427;
+		chute1 = 431.714;
+		chute2 = 696.373;
+		chute3 = 11.691;
+		chute4 = 12.527;
+	
+	}
+
+	CUSTOMSETTING
+	{
+		id = 6;
+		name = Custom 6;
+		gravity = 9.81;
+		airDensity = 1.22498;
+		chute0 = 482.427;
+		chute1 = 431.714;
+		chute2 = 696.373;
+		chute3 = 11.691;
+		chute4 = 12.527;
+	
+	}
+
+
+	CUSTOMSETTING
+	{
+		id = 7;
+		name = Custom 7;
+		gravity = 9.81;
+		airDensity = 1.22498;
+		chute0 = 482.427;
+		chute1 = 431.714;
+		chute2 = 696.373;
+		chute3 = 11.691;
+		chute4 = 12.527;
+	
+	}
+
+
+	CUSTOMSETTING
+	{
+		id = 8;
+		name = Custom 8;
+		gravity = 9.81;
+		airDensity = 1.22498;
+		chute0 = 482.427;
+		chute1 = 431.714;
+		chute2 = 696.373;
+		chute3 = 11.691;
+		chute4 = 12.527;
+	
+	}
+
+	CUSTOMSETTING
+	{
+		id = 9;
+		name = Custom 9;
+		gravity = 9.81;
+		airDensity = 1.22498;
+		chute0 = 482.427;
+		chute1 = 431.714;
+		chute2 = 696.373;
+		chute3 = 11.691;
+		chute4 = 12.527;
+	
+	}
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

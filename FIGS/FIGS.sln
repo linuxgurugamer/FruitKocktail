@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FillingInventoryGenerously", "FillingInventoryGenerously\FillingInventoryGenerously.csproj", "{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A06A8DC5-E1E7-4773-A236-D4D6772BA07C}"
+	ProjectSection(SolutionItems) = preProject
+		buildRelease.bat = buildRelease.bat
+		CHANGELOG.md = CHANGELOG.md
+		deploy.bat = deploy.bat
+		FillingInventoryGenerously.version = FillingInventoryGenerously.version
+		jenkins.txt = jenkins.txt
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D8A80EE-74B8-4119-899C-0F9F0C0DA8CE}
+	EndGlobalSection
+EndGlobal

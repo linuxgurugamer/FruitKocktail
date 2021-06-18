@@ -1,0 +1,14 @@
+v1.0.2
+
+- More exception handling added plus lock out mod when error to prevent further exceptions
+
+v1.0.1
+
+- Updated code to allow for selection from single list
+- Recoded to improve exception handling
+
+v1.0.0
+
+- Initial release
+
+

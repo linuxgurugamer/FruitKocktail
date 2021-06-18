@@ -1,0 +1,2 @@
+solarPanels5
+LgRadialSolarPanel

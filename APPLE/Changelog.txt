@@ -1,0 +1,8 @@
+Changelog
+
+1.1.9
+	Adoption by Linuxgurugamer
+	Added InstallChecker
+	Added AssemblyVersion.tt
+	Added local build files
+	Added GameData (needed for builds)

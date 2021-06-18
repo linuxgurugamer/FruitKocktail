@@ -1,0 +1,221 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APPLE", "APPLE\AutomatedPopularPreLaunchExperiment\APPLE.csproj", "{4C19880B-53BE-422C-88C0-9469192D46B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APPLE Solution Items", "APPLE Solution Items", "{EBBFF8AD-7A4F-449F-A2D1-CA2A1A469082}"
+	ProjectSection(SolutionItems) = preProject
+		APPLE\APPLE.version = APPLE\APPLE.version
+		APPLE\Changelog.txt = APPLE\Changelog.txt
+		APPLE\jenkins.txt = APPLE\jenkins.txt
+		APPLE\LICENSE = APPLE\LICENSE
+		APPLE\README.md = APPLE\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIGS", "FIGS\FillingInventoryGenerously\FIGS.csproj", "{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FIGS Solution Items", "FIGS Solution Items", "{A06A8DC5-E1E7-4773-A236-D4D6772BA07C}"
+	ProjectSection(SolutionItems) = preProject
+		FIGS\CHANGELOG.md = FIGS\CHANGELOG.md
+		FIGS\FIGS.version = FIGS\FIGS.version
+		FIGS\jenkins.txt = FIGS\jenkins.txt
+		FIGS\LICENSE = FIGS\LICENSE
+		FIGS\README.md = FIGS\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRAPES", "GRAPES\GasRepairsAndProbablyExpensiveSnacks\GRAPES.csproj", "{89532C63-5AC6-4943-958D-5693CF3B0894}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GRAPES Solution Items", "GRAPES Solution Items", "{3C143931-CFD4-43AA-B7E6-A926267C51F9}"
+	ProjectSection(SolutionItems) = preProject
+		GasRepairsAndProbablyExpensiveSnacks\buildRelease.bat = GasRepairsAndProbablyExpensiveSnacks\buildRelease.bat
+		GasRepairsAndProbablyExpensiveSnacks\CHANGELOG.txt = GasRepairsAndProbablyExpensiveSnacks\CHANGELOG.txt
+		GasRepairsAndProbablyExpensiveSnacks\deploy.bat = GasRepairsAndProbablyExpensiveSnacks\deploy.bat
+		GasRepairsAndProbablyExpensiveSnacks\GasRepairsAndProbablyExpensiveSnacks.version = GasRepairsAndProbablyExpensiveSnacks\GasRepairsAndProbablyExpensiveSnacks.version
+		GasRepairsAndProbablyExpensiveSnacks\jenkins.txt = GasRepairsAndProbablyExpensiveSnacks\jenkins.txt
+		GasRepairsAndProbablyExpensiveSnacks\LICENSE = GasRepairsAndProbablyExpensiveSnacks\LICENSE
+		GasRepairsAndProbablyExpensiveSnacks\README.md = GasRepairsAndProbablyExpensiveSnacks\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIME", "LIME\LieInMustEnsue\LIME.csproj", "{2EC4EC22-3293-46DD-A0B7-995E57DE1627}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIME Solution Items", "LIME Solution Items", "{EA722E74-3667-45B9-8711-FB25F9ECB48D}"
+	ProjectSection(SolutionItems) = preProject
+		LieInMustEnsue\buildRelease.bat = LieInMustEnsue\buildRelease.bat
+		LieInMustEnsue\CHANGELOG = LieInMustEnsue\CHANGELOG
+		LieInMustEnsue\deploy.bat = LieInMustEnsue\deploy.bat
+		LieInMustEnsue\jenkins.txt = LieInMustEnsue\jenkins.txt
+		LieInMustEnsue\LICENSE = LieInMustEnsue\LICENSE
+		LieInMustEnsue\LieInMustEnsue.version = LieInMustEnsue\LieInMustEnsue.version
+		LieInMustEnsue\README.md = LieInMustEnsue\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MANGO", "MANGO\MyAntennaNeverGoesOffline\MANGO.csproj", "{EAC3A2ED-5EA2-43CE-954F-21C2E3920EC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MANGO Solution Items", "MANGO Solution Items", "{6B5BE3FF-01FC-483F-9F86-EFF48AC2ADD0}"
+	ProjectSection(SolutionItems) = preProject
+		MyAntennaNeverGoesOffline\buildRelease.bat = MyAntennaNeverGoesOffline\buildRelease.bat
+		MyAntennaNeverGoesOffline\deploy.bat = MyAntennaNeverGoesOffline\deploy.bat
+		MyAntennaNeverGoesOffline\jenkins.txt = MyAntennaNeverGoesOffline\jenkins.txt
+		MyAntennaNeverGoesOffline\LICENSE = MyAntennaNeverGoesOffline\LICENSE
+		MyAntennaNeverGoesOffline\MyAntennaeNeverGoOffline.version = MyAntennaNeverGoesOffline\MyAntennaeNeverGoOffline.version
+		MyAntennaNeverGoesOffline\README.md = MyAntennaNeverGoesOffline\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORANGE", "ORANGE\OhReallyAnotherNamingEndeavour\ORANGE.csproj", "{8E5D58B0-2291-44E9-87FA-3E3DE47D5558}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ORANGE Solution Items", "ORANGE Solution Items", "{A8E045D4-5941-4BF1-896F-B669AF1AEE6B}"
+	ProjectSection(SolutionItems) = preProject
+		OhReallyAnotherNamingEndeavour\buildRelease.bat = OhReallyAnotherNamingEndeavour\buildRelease.bat
+		OhReallyAnotherNamingEndeavour\CHANGELOG = OhReallyAnotherNamingEndeavour\CHANGELOG
+		OhReallyAnotherNamingEndeavour\deploy.bat = OhReallyAnotherNamingEndeavour\deploy.bat
+		OhReallyAnotherNamingEndeavour\jenkins.txt = OhReallyAnotherNamingEndeavour\jenkins.txt
+		OhReallyAnotherNamingEndeavour\LICENSE = OhReallyAnotherNamingEndeavour\LICENSE
+		OhReallyAnotherNamingEndeavour\OhReallyAnotherNamingEndeavour.version = OhReallyAnotherNamingEndeavour\OhReallyAnotherNamingEndeavour.version
+		OhReallyAnotherNamingEndeavour\README.md = OhReallyAnotherNamingEndeavour\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLUM", "PLUM\ParachutesLetsUseMaths\PLUM.csproj", "{E4C76EDD-22EE-42FC-BB26-B5E17BDF7D62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PLUM Solution Items", "PLUM Solution Items", "{8C03A44B-D85D-4055-BEFD-73B18FD2BBFA}"
+	ProjectSection(SolutionItems) = preProject
+		ParachutesLetsUseMaths\buildRelease.bat = ParachutesLetsUseMaths\buildRelease.bat
+		ParachutesLetsUseMaths\CHANGELOG.md = ParachutesLetsUseMaths\CHANGELOG.md
+		ParachutesLetsUseMaths\deploy.bat = ParachutesLetsUseMaths\deploy.bat
+		ParachutesLetsUseMaths\jenkins.txt = ParachutesLetsUseMaths\jenkins.txt
+		ParachutesLetsUseMaths\LICENSE = ParachutesLetsUseMaths\LICENSE
+		ParachutesLetsUseMaths\ParachutesLetsUseMaths.version = ParachutesLetsUseMaths\ParachutesLetsUseMaths.version
+		ParachutesLetsUseMaths\README.md = ParachutesLetsUseMaths\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRUNE", "PRUNE\PotentiallyReallyUsefulNewEditorSorter\PRUNE.csproj", "{64F11B8A-884B-4585-B6B4-80DBE8EE7946}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PRUNE Solution Items", "PRUNE Solution Items", "{6B00FC87-9896-47BD-A0B1-465D57B8FF08}"
+	ProjectSection(SolutionItems) = preProject
+		PotentiallyReallyUsefulNewEditorSorter\buildRelease.bat = PotentiallyReallyUsefulNewEditorSorter\buildRelease.bat
+		PotentiallyReallyUsefulNewEditorSorter\deploy.bat = PotentiallyReallyUsefulNewEditorSorter\deploy.bat
+		PotentiallyReallyUsefulNewEditorSorter\jenkins.txt = PotentiallyReallyUsefulNewEditorSorter\jenkins.txt
+		PotentiallyReallyUsefulNewEditorSorter\LICENSE = PotentiallyReallyUsefulNewEditorSorter\LICENSE
+		PotentiallyReallyUsefulNewEditorSorter\PotentiallyReallyUsefulNewEditorSorter.version = PotentiallyReallyUsefulNewEditorSorter\PotentiallyReallyUsefulNewEditorSorter.version
+		PotentiallyReallyUsefulNewEditorSorter\README.md = PotentiallyReallyUsefulNewEditorSorter\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PEAR", "PEAR\ProgramaticExtensionAndRetraction\PEAR.csproj", "{FA304326-9D59-43A8-9E7F-9996972AC574}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PEAR Solution Items", "PEAR Solution Items", "{35B5F451-05C3-4B6A-B704-2B122F557475}"
+	ProjectSection(SolutionItems) = preProject
+		ProgramaticExtensionAndRetraction\buildRelease.bat = ProgramaticExtensionAndRetraction\buildRelease.bat
+		ProgramaticExtensionAndRetraction\CHANGELOG = ProgramaticExtensionAndRetraction\CHANGELOG
+		ProgramaticExtensionAndRetraction\deploy.bat = ProgramaticExtensionAndRetraction\deploy.bat
+		ProgramaticExtensionAndRetraction\jenkins.txt = ProgramaticExtensionAndRetraction\jenkins.txt
+		ProgramaticExtensionAndRetraction\LICENSE = ProgramaticExtensionAndRetraction\LICENSE
+		ProgramaticExtensionAndRetraction\ProgramaticExtensionAndRetraction.version = ProgramaticExtensionAndRetraction\ProgramaticExtensionAndRetraction.version
+		ProgramaticExtensionAndRetraction\README.md = ProgramaticExtensionAndRetraction\README.md
+		ProgramaticExtensionAndRetraction\UpgradeLog.htm = ProgramaticExtensionAndRetraction\UpgradeLog.htm
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSIndicator", "VSIndicator\VSIndicator\VSIndicator.csproj", "{CE62CBBB-F1FB-4D87-9DD3-7A2A4BB0E970}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VSI Solution Items", "VSI Solution Items", "{C0DB2F9A-5E3A-44F2-98A6-C1630639CDE0}"
+	ProjectSection(SolutionItems) = preProject
+		VSIndicator\buildRelease.bat = VSIndicator\buildRelease.bat
+		VSIndicator\CHANGELOG = VSIndicator\CHANGELOG
+		VSIndicator\deploy.bat = VSIndicator\deploy.bat
+		VSIndicator\jenkins.txt = VSIndicator\jenkins.txt
+		VSIndicator\LICENSE = VSIndicator\LICENSE
+		VSIndicator\README.md = VSIndicator\README.md
+		VSIndicator\VSIndicator.version = VSIndicator\VSIndicator.version
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildSolutionProject", "BuildSolutionProject\BuildSolutionProject.csproj", "{210D88C0-2EF1-400A-9A65-C17C1D6155FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4C19880B-53BE-422C-88C0-9469192D46B2} = {4C19880B-53BE-422C-88C0-9469192D46B2}
+		{2EC4EC22-3293-46DD-A0B7-995E57DE1627} = {2EC4EC22-3293-46DD-A0B7-995E57DE1627}
+		{FA304326-9D59-43A8-9E7F-9996972AC574} = {FA304326-9D59-43A8-9E7F-9996972AC574}
+		{89532C63-5AC6-4943-958D-5693CF3B0894} = {89532C63-5AC6-4943-958D-5693CF3B0894}
+		{64F11B8A-884B-4585-B6B4-80DBE8EE7946} = {64F11B8A-884B-4585-B6B4-80DBE8EE7946}
+		{8E5D58B0-2291-44E9-87FA-3E3DE47D5558} = {8E5D58B0-2291-44E9-87FA-3E3DE47D5558}
+		{CE62CBBB-F1FB-4D87-9DD3-7A2A4BB0E970} = {CE62CBBB-F1FB-4D87-9DD3-7A2A4BB0E970}
+		{E4C76EDD-22EE-42FC-BB26-B5E17BDF7D62} = {E4C76EDD-22EE-42FC-BB26-B5E17BDF7D62}
+		{374F00DE-4BEC-47F9-9E25-C9D27766DDFF} = {374F00DE-4BEC-47F9-9E25-C9D27766DDFF}
+		{EAC3A2ED-5EA2-43CE-954F-21C2E3920EC4} = {EAC3A2ED-5EA2-43CE-954F-21C2E3920EC4}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB44BFFC-F2B5-4292-8843-A8FA268DA53C}"
+	ProjectSection(SolutionItems) = preProject
+		deploy.bat = deploy.bat
+		deployCopy.bat = deployCopy.bat
+		FruitKocktail.version = FruitKocktail.version
+		jenkins-APPLE.txt = jenkins-APPLE.txt
+		jenkins-FIGS.txt = jenkins-FIGS.txt
+		jenkins-GRAPES.txt = jenkins-GRAPES.txt
+		jenkins-LIME.txt = jenkins-LIME.txt
+		jenkins-MANGO.txt = jenkins-MANGO.txt
+		jenkins-ORANGE.txt = jenkins-ORANGE.txt
+		jenkins-PEAR.txt = jenkins-PEAR.txt
+		jenkins-PLUM.txt = jenkins-PLUM.txt
+		jenkins-PRUNE.txt = jenkins-PRUNE.txt
+		jenkins-VSIndicator.txt = jenkins-VSIndicator.txt
+		jenkins.txt = jenkins.txt
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C19880B-53BE-422C-88C0-9469192D46B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C19880B-53BE-422C-88C0-9469192D46B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C19880B-53BE-422C-88C0-9469192D46B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C19880B-53BE-422C-88C0-9469192D46B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374F00DE-4BEC-47F9-9E25-C9D27766DDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89532C63-5AC6-4943-958D-5693CF3B0894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89532C63-5AC6-4943-958D-5693CF3B0894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89532C63-5AC6-4943-958D-5693CF3B0894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89532C63-5AC6-4943-958D-5693CF3B0894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC4EC22-3293-46DD-A0B7-995E57DE1627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC4EC22-3293-46DD-A0B7-995E57DE1627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC4EC22-3293-46DD-A0B7-995E57DE1627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC4EC22-3293-46DD-A0B7-995E57DE1627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC3A2ED-5EA2-43CE-954F-21C2E3920EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC3A2ED-5EA2-43CE-954F-21C2E3920EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC3A2ED-5EA2-43CE-954F-21C2E3920EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC3A2ED-5EA2-43CE-954F-21C2E3920EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E5D58B0-2291-44E9-87FA-3E3DE47D5558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5D58B0-2291-44E9-87FA-3E3DE47D5558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5D58B0-2291-44E9-87FA-3E3DE47D5558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5D58B0-2291-44E9-87FA-3E3DE47D5558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C76EDD-22EE-42FC-BB26-B5E17BDF7D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C76EDD-22EE-42FC-BB26-B5E17BDF7D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C76EDD-22EE-42FC-BB26-B5E17BDF7D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C76EDD-22EE-42FC-BB26-B5E17BDF7D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F11B8A-884B-4585-B6B4-80DBE8EE7946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F11B8A-884B-4585-B6B4-80DBE8EE7946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F11B8A-884B-4585-B6B4-80DBE8EE7946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F11B8A-884B-4585-B6B4-80DBE8EE7946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA304326-9D59-43A8-9E7F-9996972AC574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA304326-9D59-43A8-9E7F-9996972AC574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA304326-9D59-43A8-9E7F-9996972AC574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA304326-9D59-43A8-9E7F-9996972AC574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE62CBBB-F1FB-4D87-9DD3-7A2A4BB0E970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE62CBBB-F1FB-4D87-9DD3-7A2A4BB0E970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE62CBBB-F1FB-4D87-9DD3-7A2A4BB0E970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE62CBBB-F1FB-4D87-9DD3-7A2A4BB0E970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210D88C0-2EF1-400A-9A65-C17C1D6155FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210D88C0-2EF1-400A-9A65-C17C1D6155FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210D88C0-2EF1-400A-9A65-C17C1D6155FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210D88C0-2EF1-400A-9A65-C17C1D6155FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {490762BF-7F15-433C-B5F0-B7881E106486}
+	EndGlobalSection
+EndGlobal

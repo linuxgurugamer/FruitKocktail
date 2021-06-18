@@ -1,0 +1,16 @@
+{
+  "NAME": "LieInMustEnsue",
+  "URL": "http://ksp.spacetux.net/avc/LieInMustEnsue",
+  "DOWNLOAD": "",
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 1,
+    "PATCH": 3,
+    "BUILD": 0
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 11,
+    "PATCH": 2
+  }
+}

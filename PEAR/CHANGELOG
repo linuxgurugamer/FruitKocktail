@@ -1,0 +1,7 @@
+v1.0.0
+
+- initial release
+
+v1.0.1
+
+- fixed bug involving game breaking NRE spam in the Editor when part accidently deleted
