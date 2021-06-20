@@ -13,9 +13,7 @@ set GAMEDATA="GameData"
 set VERSIONFILE=%GAMEDIR%.version
 
 copy /y  FruitKocktail.version  %GAMEDATA%\%GAMEDIR%
-rem copy /y  README.md %GAMEDATA%\%GAMEDIR%\%3
-rem copy /y  COPYING %GAMEDATA%\%GAMEDIR%\%3
 
 xcopy /y /s /I %GAMEDATA%\%GAMEDIR% "%H%\GameData\%GAMEDIR%"
 
- pause
+rem  pause

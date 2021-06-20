@@ -1,0 +1,6 @@
+ChangeLog
+
+0.0.0.1
+	Adoption by Linuxgurugamer
+	Reorganized all directories for build process
+	

@@ -33,7 +33,7 @@
 	//
 	// Update the following with the name of the .version file which is in the root directory
 	//
-	string versionfile = RootDirectory + "PRUNE/PRUNE.version";
+	string versionfile = RootDirectory + "PRUNES/PRUNES.version";
 
 
 	if (!File.Exists(versionfile))

@@ -55,9 +55,8 @@ start /D D:\Users\jbb\github\FruitKocktail /WAIT deployCopy.bat   $(TargetDir) $
 
 
 
-if $(ConfigurationName) == Release 
+if $(ConfigurationName) == Release (
 
-(
 
 
 

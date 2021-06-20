@@ -68,12 +68,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PLUM Solution Items", "PLUM
 		PLUM\README.md = PLUM\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRUNE", "PRUNE\PRUNE.csproj", "{64F11B8A-884B-4585-B6B4-80DBE8EE7946}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRUNES", "PRUNES\PRUNES.csproj", "{64F11B8A-884B-4585-B6B4-80DBE8EE7946}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PRUNE Solution Items", "PRUNE Solution Items", "{6B00FC87-9896-47BD-A0B1-465D57B8FF08}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PRUNES Solution Items", "PRUNES Solution Items", "{6B00FC87-9896-47BD-A0B1-465D57B8FF08}"
 	ProjectSection(SolutionItems) = preProject
-		PRUNE\PRUNE.version = PRUNE\PRUNE.version
-		PRUNE\README.md = PRUNE\README.md
+		PRUNES\PRUNES.version = PRUNES\PRUNES.version
+		PRUNES\README.md = PRUNES\README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PEAR", "PEAR\PEAR.csproj", "{FA304326-9D59-43A8-9E7F-9996972AC574}"
@@ -111,6 +111,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildSolutionProject", "Bui
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB44BFFC-F2B5-4292-8843-A8FA268DA53C}"
 	ProjectSection(SolutionItems) = preProject
+		ChangeLog.txt = ChangeLog.txt
 		deploy.bat = deploy.bat
 		deployCopy.bat = deployCopy.bat
 		FruitKocktail.version = FruitKocktail.version
