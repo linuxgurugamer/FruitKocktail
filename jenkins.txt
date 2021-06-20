@@ -33,19 +33,16 @@
 # 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
 2:APPLE,		APPLE/AutomatedPopularPreLaunchExperiment/APPLE.csproj,		APPLE/APPLE.version,			GameData/FruitKocktail/APPLE/Plugins,  GameData/FruitKocktail/APPLE/
 
-#2:QuickBrake,	QuickBrake/QuickBrake.csproj,								QuickBrake/QuickBrake.version,	GameData/QuickMods/QuickBrake/Plugins,	QuickMods/QuickBrake
+#2:FIGS,FIGS/FillingInventoryGenerously/FIGS.csproj,FIGS/FIGS.version,GameData/FruitKocktail/FIGS/Plugins, GameData/FruitKocktail/FIGS/
+#2:GRAPES,GRAPES/GasRepairsAndProbablyExpensiveSnacks/GRAPES.csproj,/GRAPES/GRAPES.version,GameData/FruitKocktail/GRAPES/Plugins, GameData/FruitKocktail/GRAPES
+#2:LIME,LIME/LieInMustEnsue/LIME.csproj,/LIME/LIME.version,GameData/FruitKocktail/LIME/Plugins, GameData/FruitKocktail/LIME
+#2:MANGO,MANGO/MyAntennaeNeverGoesOffline/MANGO.csproj,/MANGO/MANGO.version,GameData/FruitKocktail/MANGO/Plugins, GameData/FruitKocktail/MANGO
+#2:ORANGE,ORANGE/OhReallyAnotherNamingEndeavour/ORANGE.csproj,/ORANGE/ORANGE.version,GameData/FruitKocktail/ORANGE/Plugins, GameData/FruitKocktail/ORANGE
+#2:PEAR,PEAR/ProgramaticExtensionAndRetraction/PEAR.csproj,/PEAR/PEAR.version,GameData/FruitKocktail/PEAR/Plugins, GameData/FruitKocktail/PEAR
+#2:PLUM,PLUM/ParachutesLetsUseMaths/PLUM.csproj,/PLUM/PLUM.version,GameData/FruitKocktail/PLUM/Plugins, GameData/FruitKocktail/PLUM
+#2:PRUNE,PRUNE/PotentiallyReallyUsefulNewEditorSorter/PLUM.csproj,/PRUNE/PRUNE.version,GameData/FruitKocktail/PRUNE/Plugins, GameData/FruitKocktail/PRUNE
 
-
-#2:FIGS,FIGS/FillingInventoryGenerously/FIGS.csproj,FIGS/FIGS.version,GameData/FruitKocktail/FIGS/Plugins
-#2:GRAPES,GRAPES/GasRepairsAndProbablyExpensiveSnacks/GRAPES.csproj,/GRAPES/GRAPES.version,GameData/FruitKocktail/GRAPES/Plugins
-#2:LIME,LIME/LieInMustEnsue/LIME.csproj,/LIME/LIME.version,GameData/FruitKocktail/LIME/Plugins
-#2:MANGO,MANGO/MyAntennaeNeverGoesOffline/MANGO.csproj,/MANGO/MANGO.version,GameData/FruitKocktail/MANGO/Plugins
-#2:ORANGE,ORANGE/OhReallyAnotherNamingEndeavour/ORANGE.csproj,/ORANGE/ORANGE.version,GameData/FruitKocktail/ORANGE/Plugins
-#2:PEAR,PEAR/ProgramaticExtensionAndRetraction/PEAR.csproj,/PEAR/PEAR.version,GameData/FruitKocktail/PEAR/Plugins
-#2:PLUM,PLUM/ParachutesLetsUseMaths/PLUM.csproj,/PLUM/PLUM.version,GameData/FruitKocktail/PLUM/Plugins
-#2:PRUNE,PRUNE/PotentiallyReallyUsefulNewEditorSorter/PLUM.csproj,/PRUNE/PRUNE.version,GameData/FruitKocktail/PRUNE/Plugins
-
-#2:VSIndicator,VSIndicator/VSIndicator/VSIndicator.csproj,VSIndicator/VSIndicator.version,GameData/FruitKocktail/VSIndicator/Plugins
+#2:VSIndicator,VSIndicator/VSIndicator/VSIndicator.csproj,VSIndicator/VSIndicator.version,GameData/FruitKocktail/VSIndicator/Plugins, GameData/FruitKocktail/VSIndicator
 
 
 
