@@ -42,7 +42,7 @@
 #2:PLUM,PLUM/ParachutesLetsUseMaths/PLUM.csproj,/PLUM/PLUM.version,GameData/FruitKocktail/PLUM/Plugins
 #2:PRUNE,PRUNE/PotentiallyReallyUsefulNewEditorSorter/PLUM.csproj,/PRUNE/PRUNE.version,GameData/FruitKocktail/PRUNE/Plugins
 
-2:VSIndicator,VSIndicator/VSIndicator/VSIndicator.csproj,VSIndicator/VSIndicator.version,GameData/FruitKocktail/VSIndicator/Plugins
+#2:VSIndicator,VSIndicator/VSIndicator/VSIndicator.csproj,VSIndicator/VSIndicator.version,GameData/FruitKocktail/VSIndicator/Plugins
 
 
 
