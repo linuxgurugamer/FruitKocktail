@@ -31,17 +31,17 @@
 1:FruitKocktail, FruitKocktail.version
 
 # 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
-2:APPLE,APPLE/APPLE.csproj,APPLE/APPLE.version,	GameData/FruitKocktail/APPLE/Plugins, GameData/FruitKocktail/APPLE/
-2:FIGS,FIGS/FIGS.csproj,FIGS/FIGS.version,GameData/FruitKocktail/FIGS/Plugins, GameData/FruitKocktail/FIGS/
-2:GRAPES,GRAPES/GRAPES.csproj,GRAPES/GRAPES.version,GameData/FruitKocktail/GRAPES/Plugins, GameData/FruitKocktail/GRAPES
-2:LIME,LIME/LIME.csproj,LIME/LIME.version,GameData/FruitKocktail/LIME/Plugins, GameData/FruitKocktail/LIME
-2:MANGO,MANGO/MANGO.csproj,MANGO/MANGO.version,GameData/FruitKocktail/MANGO/Plugins, GameData/FruitKocktail/MANGO
-2:ORANGE,ORANGE/ORANGE.csproj,ORANGE/ORANGE.version,GameData/FruitKocktail/ORANGE/Plugins, GameData/FruitKocktail/ORANGE
-2:PEAR,PEAR/PEAR.csproj,PEAR/PEAR.version,GameData/FruitKocktail/PEAR/Plugins, GameData/FruitKocktail/PEAR
-2:PLUM,PLUM/PLUM.csproj,PLUM/PLUM.version,GameData/FruitKocktail/PLUM/Plugins, GameData/FruitKocktail/PLUM
-2:PRUNE,PRUNE/PRUNE.csproj,PRUNE/PRUNE.version,GameData/FruitKocktail/PRUNE/Plugins, GameData/FruitKocktail/PRUNE
+2:APPLE,APPLE/APPLE.csproj,APPLE/APPLE.version,	GameData/FruitKocktail/APPLE/Plugins, FruitKocktail/APPLE
+2:FIGS,FIGS/FIGS.csproj,FIGS/FIGS.version,GameData/FruitKocktail/FIGS/Plugins, FruitKocktail/FIGS
+2:GRAPES,GRAPES/GRAPES.csproj,GRAPES/GRAPES.version,GameData/FruitKocktail/GRAPES/Plugins, FruitKocktail/GRAPES
+2:LIME,LIME/LIME.csproj,LIME/LIME.version,GameData/FruitKocktail/LIME/Plugins, FruitKocktail/LIME
+2:MANGO,MANGO/MANGO.csproj,MANGO/MANGO.version,GameData/FruitKocktail/MANGO/Plugins, FruitKocktail/MANGO
+2:ORANGE,ORANGE/ORANGE.csproj,ORANGE/ORANGE.version,GameData/FruitKocktail/ORANGE/Plugins, FruitKocktail/ORANGE
+2:PEAR,PEAR/PEAR.csproj,PEAR/PEAR.version,GameData/FruitKocktail/PEAR/Plugins, FruitKocktail/PEAR
+2:PLUM,PLUM/PLUM.csproj,PLUM/PLUM.version,GameData/FruitKocktail/PLUM/Plugins, FruitKocktail/PLUM
+2:PRUNE,PRUNE/PRUNE.csproj,PRUNE/PRUNE.version,GameData/FruitKocktail/PRUNE/Plugins, FruitKocktail/PRUNE
 
-2:VSIndicator,VSIndicator/VSIndicator.csproj,VSIndicator/VSIndicator.version,GameData/FruitKocktail/VSIndicator/Plugins, GameData/FruitKocktail/VSIndicator
+2:VSIndicator,VSIndicator/VSIndicator.csproj,VSIndicator/VSIndicator.version,GameData/FruitKocktail/VSIndicator/Plugins, FruitKocktail/VSIndicator
 
 
 
