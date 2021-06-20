@@ -47,8 +47,8 @@
 
 # 3:SOURCEFILE, DESTDIR
 3:FruitKocktail.version,GameData/FruitKocktail
-3:LICENSE.md,GameData/KerbalHotSeat
-#3:README.md,GameData/KerbalHotSeat
+3:LICENSE.md,GameData/FruitKocktail
+#3:README.md,GameData/FruitKocktail
 
 # 4:SOURCDIR, DESTDIR
 #4:Textures,GameData/ManeuverQueue/Textures
