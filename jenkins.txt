@@ -39,7 +39,7 @@
 2:ORANGE,ORANGE/ORANGE.csproj,ORANGE/ORANGE.version,GameData/FruitKocktail/ORANGE/Plugins, GameData/FruitKocktail/ORANGE
 2:PEAR,PEAR/PEAR.csproj,PEAR/PEAR.version,GameData/FruitKocktail/PEAR/Plugins, GameData/FruitKocktail/PEAR
 2:PLUM,PLUM/PLUM.csproj,PLUM/PLUM.version,GameData/FruitKocktail/PLUM/Plugins, GameData/FruitKocktail/PLUM
-2:PRUNE,PRUNE/PLUM.csproj,PRUNE/PRUNE.version,GameData/FruitKocktail/PRUNE/Plugins, GameData/FruitKocktail/PRUNE
+2:PRUNE,PRUNE/PRUNE.csproj,PRUNE/PRUNE.version,GameData/FruitKocktail/PRUNE/Plugins, GameData/FruitKocktail/PRUNE
 
 2:VSIndicator,VSIndicator/VSIndicator/VSIndicator.csproj,VSIndicator/VSIndicator.version,GameData/FruitKocktail/VSIndicator/Plugins, GameData/FruitKocktail/VSIndicator
 
