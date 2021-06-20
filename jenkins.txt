@@ -31,7 +31,10 @@
 1:FruitKocktail, FruitKocktail.version
 
 # 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
-2:APPLE,APPLE/AutomatedPopularPreLaunchExperiment/APPLE.csproj,APPLE/APPLE.version,GameData/FruitKocktail/APPLE/Plugins
+2:APPLE,		APPLE/AutomatedPopularPreLaunchExperiment/APPLE.csproj,		APPLE/APPLE.version,			GameData/FruitKocktail/APPLE/Plugins,  GameData/FruitKocktail/APPLE/
+
+#2:QuickBrake,	QuickBrake/QuickBrake.csproj,								QuickBrake/QuickBrake.version,	GameData/QuickMods/QuickBrake/Plugins,	QuickMods/QuickBrake
+
 
 #2:FIGS,FIGS/FillingInventoryGenerously/FIGS.csproj,FIGS/FIGS.version,GameData/FruitKocktail/FIGS/Plugins
 #2:GRAPES,GRAPES/GasRepairsAndProbablyExpensiveSnacks/GRAPES.csproj,/GRAPES/GRAPES.version,GameData/FruitKocktail/GRAPES/Plugins
