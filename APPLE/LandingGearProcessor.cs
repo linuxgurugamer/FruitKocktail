@@ -13,7 +13,7 @@ namespace AutomatedPopularPreLaunchExperiment
         private VesselType vesType;
         private List<Part> depList;
         private bool landed;
-        private bool vesCode;
+        //private bool vesCode;
 
 
         public LandingGearProcessor(Vessel _activeVes, VesselType _vesType, List<Part> _depList, bool _landed)
@@ -25,6 +25,8 @@ namespace AutomatedPopularPreLaunchExperiment
         }
 
         // check not something that shouldn't deploy
+        public bool ProcessOutput {  get { return (vesType != VesselType.Debris || vesType != VesselType.Unknown); } }
+#if false
         public bool ProcessOutput()
         {
             if (vesType != VesselType.Debris || vesType != VesselType.Unknown)
@@ -36,25 +38,24 @@ namespace AutomatedPopularPreLaunchExperiment
             return vesCode;
 
         }
-
+#endif
         // checks if landed and disarms if so
-        public bool StartStateOk()
+        public bool StartStateOk {  get { return landed; } }
+#if false
+       public bool StartStateOk()
         {
-
+            return landed;
             switch (landed)
             {
                 case true:
                     return true;
-                    break;
                 case false:
                     return false;
-                    break;
                 default:
                     return false;
-                    break;
             }   
-
         }
+#endif
 
         // get vessel type parameters
         public float[] VesHeight()

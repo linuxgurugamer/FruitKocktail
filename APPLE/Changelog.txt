@@ -1,5 +1,8 @@
 Changelog
 
+1.1.9.1 (unreleased)
+	minor optimization 
+
 1.1.9
 	Adoption by Linuxgurugamer
 	Added InstallChecker

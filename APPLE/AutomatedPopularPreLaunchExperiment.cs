@@ -148,8 +148,8 @@ namespace AutomatedPopularPreLaunchExperiment
                                 LandingGearProcessor lpg = new LandingGearProcessor(FlightGlobals.ActiveVessel,
                             FlightGlobals.ActiveVessel.vesselType, listOfDeployables, FlightGlobals.ActiveVessel.Landed);
 
-                                gearPermit = lpg.ProcessOutput();
-                                startStatus = lpg.StartStateOk();
+                                gearPermit = lpg.ProcessOutput;
+                                startStatus = lpg.StartStateOk;
 
                                 if (gearPermit)
                                 {

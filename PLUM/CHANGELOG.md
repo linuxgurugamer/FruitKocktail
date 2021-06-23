@@ -1,5 +1,8 @@
 Changelog
 
+1.1.1.1
+	Fixed hiding of window
+
 1.1.1
 	Adoption by Linuxgurugamer
 	Added support for ToolbarController

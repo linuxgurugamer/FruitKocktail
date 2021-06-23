@@ -828,15 +828,17 @@ namespace ParachutesLetsUseMaths
         // onGUI
         public void OnGUI()
         {
-            if (btnIsPressed)
+            if (!hide)
             {
-                ItsPlumTime();
+                if (btnIsPressed)
+                {
+                    ItsPlumTime();
+                }
+                if (btnIsPressed && optionsPressed)
+                {
+                    ShowOptionsWindow();
+                }
             }
-            if (btnIsPressed && optionsPressed)
-            {
-                ShowOptionsWindow();
-            }
-
         }
 
 
