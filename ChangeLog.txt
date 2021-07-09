@@ -4,3 +4,5 @@ ChangeLog
 	Adoption by Linuxgurugamer
 	Reorganized all directories for build process
 	
+0.0.0.2
+	Fixed VSIndicator installchecker

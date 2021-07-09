@@ -41,7 +41,7 @@ namespace VSIndicator
     internal class InstallChecker : MonoBehaviour
     {
         private const string MODNAME = "Vertikal Speed Indicator";
-        private const string FOLDERNAME = "FruitKocktail/VertikalSpeedIndicator";
+        private const string FOLDERNAME = "FruitKocktail/VSIndicator";
         private const string EXPECTEDPATH = FOLDERNAME + "/Plugins";
 
         protected void Start()
