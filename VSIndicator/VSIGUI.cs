@@ -86,13 +86,13 @@ namespace VSIndicator
                 ApplicationLauncher.AppScenes.FLIGHT,
                 MODID,
                 "GRAPESButton",
-                "FruitKocktail/VertikalSpeedIndicator/PluginData/Icons/vsion-38",
-                "FruitKocktail/VertikalSpeedIndicator/PluginData/Icons/vsion-24",
+                "FruitKocktail/VSIndicator/PluginData/Icons/vsion-38",
+                "FruitKocktail/VSIndicator/PluginData/Icons/vsion-24",
                 MODNAME
             );
 
-            toolbarControl.SetTexture("FruitKocktail/VertikalSpeedIndicator/PluginData/Icons/vsioff-38",
-                "FruitKocktail/VertikalSpeedIndicator/Icons/vsioff-24");
+            toolbarControl.SetTexture("FruitKocktail/VSIndicator/PluginData/Icons/vsioff-38",
+                "FruitKocktail/VSIndicator/Icons/vsioff-24");
         }
 
         bool hide = false;
@@ -293,8 +293,8 @@ namespace VSIndicator
             if (isSurface)
             {
                 btnIsPressed = true;
-                toolbarControl.SetTexture("FruitKocktail/VertikalSpeedIndicator/PluginData/Icons/vsion-38",
-                    "FruitKocktail/VertikalSpeedIndicator/Icons/vsion-24");
+                toolbarControl.SetTexture("FruitKocktail/VSIndicator/PluginData/Icons/vsion-38",
+                    "FruitKocktail/VSIndicator/Icons/vsion-24");
             }
         }
 
@@ -303,8 +303,8 @@ namespace VSIndicator
             // ie when clicked off
             if (btnIsPressed)
             {
-                toolbarControl.SetTexture("FruitKocktail/VertikalSpeedIndicator/PluginData/Icons/vsioff-38",
-                    "FruitKocktail/VertikalSpeedIndicator/Icons/vsioff-24");
+                toolbarControl.SetTexture("FruitKocktail/VSIndicator/PluginData/Icons/vsioff-38",
+                    "FruitKocktail/VSIndicator/Icons/vsioff-24");
                 btnIsPressed = false;
             }
         }

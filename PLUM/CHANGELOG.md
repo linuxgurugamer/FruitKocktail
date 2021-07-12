@@ -1,5 +1,8 @@
 Changelog
 
+1.1.1.2
+	Added AssemblyFileVersion
+
 1.1.1.1
 	Fixed hiding of window
 

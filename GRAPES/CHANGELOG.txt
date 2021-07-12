@@ -15,3 +15,6 @@ v1.0.1
 	added InstallChecker
 	Added AssemblyVersion.tt
 	Added code to hide window when game is paused, UI is hidden or GUI is locked
+
+1.0.2.1
+	Added AssemblyFileVersion

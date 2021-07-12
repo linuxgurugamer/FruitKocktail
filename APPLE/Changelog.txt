@@ -1,7 +1,8 @@
 Changelog
 
-1.1.9.1 (unreleased)
+1.1.9.1 
 	minor optimization 
+	Added AssemblyFileVersion
 
 1.1.9
 	Adoption by Linuxgurugamer

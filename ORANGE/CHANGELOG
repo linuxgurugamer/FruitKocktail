@@ -1,3 +1,6 @@
+1.0.3.2
+	Added AssemblyFileVersion
+
 v1.0.2
 
 - More exception handling added plus lock out mod when error to prevent further exceptions
