@@ -324,7 +324,6 @@ namespace VSIndicator
         private void onDestroy()
         {
             // when destroyed
-            GameEvents.OnGameSettingsApplied.Remove(TrialButton);
 
             toolbarControl.OnDestroy();
             Destroy(toolbarControl);
@@ -341,6 +340,7 @@ namespace VSIndicator
             GameEvents.onGUIUnlock.Remove(OnShowUI);
             GameEvents.onGamePause.Remove(OnHideUI);
             GameEvents.onGameUnpause.Remove(OnShowUI);
+            GameEvents.OnGameSettingsApplied.Remove(TrialButton);
 
         }
 
