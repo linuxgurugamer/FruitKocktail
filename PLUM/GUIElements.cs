@@ -180,9 +180,9 @@ namespace ParachutesLetsUseMaths
             {
                 // set the textures
                 optionsTxt = new Texture2D(2, 2);
-                ToolbarControl.LoadImageFromFile(ref optionsTxt, "GameData/FruitKocktail/PLUM/PluginData/Icons/plumOptions");
+                ToolbarControl.LoadImageFromFile(ref optionsTxt, KSPUtil.ApplicationRootPath + "GameData/FruitKocktail/PLUM/PluginData/Icons/plumOptions");
                 closeTxt = new Texture2D(2, 2);
-                ToolbarControl.LoadImageFromFile(ref closeTxt, "GameData/FruitKocktail/PLUM/PluginData/Icons/closeTexture");
+                ToolbarControl.LoadImageFromFile(ref closeTxt, KSPUtil.ApplicationRootPath + "GameData/FruitKocktail/PLUM/PluginData/Icons/closeTexture");
             }
 
             // define the menu particulars
