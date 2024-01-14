@@ -130,7 +130,7 @@ Panther
 Jaguar
 Wolf
 Gibbon
-Shrubery
+Shrubbery
 Porpoise
 Orca
 Hammerhead

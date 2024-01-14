@@ -7,6 +7,7 @@ using UnityEngine;
 using ToolbarControl_NS;
 using ClickThroughFix;
 
+using RealChute;
 
 namespace ParachutesLetsUseMaths
 {
@@ -496,7 +497,7 @@ namespace ParachutesLetsUseMaths
 
                 foreach (var part in EditorLogic.fetch.ship.parts)
                 {
-                    if (part.HasModuleImplementing<ModuleParachute>())
+                    if (part.HasModuleImplementing<ModuleParachute>() || part.HasModuleImplementing<RealChuteModule>())
                     {
                         part.Highlight(true);
                         paraCount += 1;
@@ -554,19 +555,21 @@ namespace ParachutesLetsUseMaths
 
                     foreach (var part in EditorLogic.fetch.ship.parts)
                     {
-                        if (part.HasModuleImplementing<ModuleParachute>())
+                        if (part.HasModuleImplementing<ModuleParachute>() || part.HasModuleImplementing<RealChuteModule>())
                         {
                             string name = part.name;
                             int paraCode;
 
                             switch (name)
                             {
+                                case "RC_cone":       // RealChute
                                 case "parachuteSingle":
                                     paraCode = 0;
                                     break;
                                 case "parachuteRadial":
                                     paraCode = 1;
                                     break;
+                                case "RC_cone_double": // RealChute
                                 case "parachuteLarge":
                                     paraCode = 2;
                                     break;
@@ -635,7 +638,7 @@ namespace ParachutesLetsUseMaths
 
                     foreach (var part in EditorLogic.fetch.ship.parts)
                     {
-                        if (part.HasModuleImplementing<ModuleParachute>())
+                        if (part.HasModuleImplementing<ModuleParachute>() || part.HasModuleImplementing<RealChuteModule>())
                         {
                             string name = part.name;
 
@@ -644,9 +647,11 @@ namespace ParachutesLetsUseMaths
                                 case "parachuteSingle":
                                     type0Count += 1;
                                     break;
+                                case "RC_radial":       // RealChute
                                 case "parachuteRadial":
                                     type1Count += 1;
                                     break;
+                                case "RC_cone_double": // RealChute
                                 case "parachuteLarge":
                                     type2Count += 1;
                                     break;

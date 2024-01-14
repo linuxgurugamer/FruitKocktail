@@ -1,5 +1,8 @@
 Changelog
 
+1.1.2
+	Added support for RealChute
+
 1.1.1.3
 	Fixed path for loading images (broken by new launcher)
 
