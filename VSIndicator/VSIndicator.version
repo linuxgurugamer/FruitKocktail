@@ -1,6 +1,6 @@
 {
   "NAME": "VSIndicator",
-  "URL": "http://ksp.spacetux.net/avc/VSIndicator",
+  "URL": "https://raw.githubusercontent.com/linuxgurugamer/FruitKocktail/main/VSIndicator/VSIndicator.version",
   "VERSION": {
     "MAJOR": 1,
     "MINOR": 2,
@@ -11,5 +11,10 @@
     "MAJOR": 1,
     "MINOR": 11,
     "PATCH": 2
+  },
+  "KSP_VERSION_MAX": {
+    "MAJOR": 1,
+    "MINOR": 12,
+    "PATCH": 99
   }
 }

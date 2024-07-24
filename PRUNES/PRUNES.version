@@ -1,6 +1,6 @@
 {
   "NAME": "PotentiallyReallyUsefulNewEditorSorter",
-  "URL": "http://ksp.spacetux.net/avc/PotentiallyReallyUsefulNewEditorSorter",
+  "URL": "https://raw.githubusercontent.com/linuxgurugamer/FruitKocktail/main/PRUNES/PRUNES.version",
   "VERSION": {
     "MAJOR": 1,
     "MINOR": 0,
@@ -11,5 +11,10 @@
     "MAJOR": 1,
     "MINOR": 11,
     "PATCH": 2
+  },
+  "KSP_VERSION_MAX": {
+    "MAJOR": 1,
+    "MINOR": 12,
+    "PATCH": 99
   }
 }

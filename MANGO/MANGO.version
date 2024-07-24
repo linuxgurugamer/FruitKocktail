@@ -1,6 +1,6 @@
 {
   "NAME": "MyAntennaeNeverGoOffline",
-  "URL": "http://ksp.spacetux.net/avc/MyAntennaeNeverGoOffline",
+  "URL": "https://raw.githubusercontent.com/linuxgurugamer/FruitKocktail/main/MANGO/MANGO.version",
   "DOWNLOAD": "",
   "VERSION": {
     "MAJOR": 1,
@@ -12,5 +12,10 @@
     "MAJOR": 1,
     "MINOR": 11,
     "PATCH": 2
+  },
+  "KSP_VERSION_MAX": {
+    "MAJOR": 1,
+    "MINOR": 12,
+    "PATCH": 99
   }
 }

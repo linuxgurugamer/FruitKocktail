@@ -6,8 +6,9 @@ using System.Text;
 using UnityEngine;
 using ToolbarControl_NS;
 using ClickThroughFix;
+using SpaceTuxUtility;
 
-using RealChute;
+//using RealChute;
 
 namespace ParachutesLetsUseMaths
 {
@@ -172,10 +173,12 @@ namespace ParachutesLetsUseMaths
         internal const string MODID = "PLUM";
         internal const string MODNAME = "Parachutes Lets Use Maths";
 
+        internal static bool HasRealChutes = false;
 
         public void Start()
         {
             Instance = this;
+            HasRealChutes = HasMod.hasMod("RealChute");
 
             if (optionsTxt == null)
             {
@@ -486,7 +489,14 @@ namespace ParachutesLetsUseMaths
             Instance.PopulateTheOptions();
         }
 
-
+        bool HasRealChuteModule(Part part)
+        {
+            //return part.HasModuleImplementing<RealChuteModule>();
+            for (int i = 0; i < part.Modules.Count; i++)
+                if (part.Modules[i].moduleName == "RealChuteModule")
+                    return true;
+            return false;
+        }
 
         // Gets the amount of chutes currently on our vessel
         public string GetParachuteQty()
@@ -497,7 +507,7 @@ namespace ParachutesLetsUseMaths
 
                 foreach (var part in EditorLogic.fetch.ship.parts)
                 {
-                    if (part.HasModuleImplementing<ModuleParachute>() || part.HasModuleImplementing<RealChuteModule>())
+                    if (part.HasModuleImplementing<ModuleParachute>() || (HasRealChutes && HasRealChuteModule(part)))
                     {
                         part.Highlight(true);
                         paraCount += 1;
@@ -555,7 +565,7 @@ namespace ParachutesLetsUseMaths
 
                     foreach (var part in EditorLogic.fetch.ship.parts)
                     {
-                        if (part.HasModuleImplementing<ModuleParachute>() || part.HasModuleImplementing<RealChuteModule>())
+                        if (part.HasModuleImplementing<ModuleParachute>() || (HasRealChutes && HasRealChuteModule(part)))
                         {
                             string name = part.name;
                             int paraCode;
@@ -638,7 +648,7 @@ namespace ParachutesLetsUseMaths
 
                     foreach (var part in EditorLogic.fetch.ship.parts)
                     {
-                        if (part.HasModuleImplementing<ModuleParachute>() || part.HasModuleImplementing<RealChuteModule>())
+                        if (part.HasModuleImplementing<ModuleParachute>() || (HasRealChutes && HasRealChuteModule(part)))
                         {
                             string name = part.name;
 

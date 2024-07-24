@@ -46,6 +46,9 @@
     <Reference Include="RealChute">
       <HintPath>$(KSPDIR)\GameData\RealChute\Plugins\RealChute.dll</HintPath>
     </Reference>
+    <Reference Include="SpaceTuxUtility">
+      <HintPath>R:\KSP_1.12.5-dev\GameData\SpaceTuxLibrary\Plugins\SpaceTuxUtility.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="ToolbarControl">
       <HintPath>$(KSPDIR)\GameData\001_ToolbarControl\Plugins\ToolbarControl.dll</HintPath>

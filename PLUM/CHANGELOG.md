@@ -1,5 +1,8 @@
 Changelog
 
+1.1.3
+	Fixed support for installs which do NOT use RealChute
+
 1.1.2
 	Added support for RealChute
 
