@@ -48,7 +48,7 @@
     <PostBuildEvent>
 set KSPDIR=$(KSPDIR)
 
-start /D D:\Users\jbb\github\FruitKocktail /WAIT deployCopy.bat   $(TargetDir) $(TargetFileName) $(ProjectName) $(ProjectDir)
+start /D D:\Users\jbb\github\KSP-1-Mods\FruitKocktail /WAIT deployCopy.bat   $(TargetDir) $(TargetFileName) $(ProjectName) $(ProjectDir)
 
 
 
@@ -60,7 +60,7 @@ if $(ConfigurationName) == Release (
 
 
 
-	start /D D:\Users\jbb\github\FruitKocktail /WAIT buildRelease.bat $(TargetDir) $(TargetFileName)
+	start /D D:\Users\jbb\github\KSP-1-Mods\FruitKocktail /WAIT buildRelease.bat $(TargetDir) $(TargetFileName)
 
 
 
