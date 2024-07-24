@@ -1,15 +1,20 @@
 {
   "NAME": "ProgramaticExtensionAndRetraction",
-  "URL": "http://ksp.spacetux.net/avc/ProgramaticExtensionAndRetraction",
+  "URL": "https://raw.githubusercontent.com/linuxgurugamer/FruitKocktail/main/PEAR/PEAR.version",
   "VERSION": {
     "MAJOR": 1,
     "MINOR": 0,
     "PATCH": 2,
-    "BUILD": 0
+    "BUILD": 1
   },
   "KSP_VERSION_MIN": {
     "MAJOR": 1,
     "MINOR": 11,
     "PATCH": 2
+  },
+  "KSP_VERSION_MAX": {
+    "MAJOR": 1,
+    "MINOR": 12,
+    "PATCH": 99
   }
 }
