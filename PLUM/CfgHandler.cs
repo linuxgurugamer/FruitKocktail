@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,10 +37,12 @@ namespace ParachutesLetsUseMaths
         // sorts the data...
         private void SortData()
         {
+            #region NO_LOCALIZATION
             if (cfgData[0] != "DATA")
             {
                 Debug.LogError("ERROR - PLUM : cfg file is not in the correct format!");
             }
+            #endregion
 
             int lineCount = cfgData.Count;
 
@@ -52,7 +55,7 @@ namespace ParachutesLetsUseMaths
             for (int y = 0; y < lineCount; y++)
             {
 
-                if (cfgData[y].Contains("id"))
+                if (cfgData[y].Contains(Localizer.Format("#LOC_PLUM_1")))
                 {
 
                     int posOfE = cfgData[y].IndexOf("=") + 1;

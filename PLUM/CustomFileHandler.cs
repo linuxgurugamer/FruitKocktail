@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,8 @@ namespace ParachutesLetsUseMaths
         public string dataDirectory;
 
         // filename references
-        public string fileName = "data.plum";
-        public string tempFileName = "data.txt";
+        public const string fileName = "data.plum";
+        public const string tempFileName = "data.txt";
         public string pathToData;
         public string tempPathtoData;
         public List<string> cfgContents;
@@ -108,7 +109,7 @@ namespace ParachutesLetsUseMaths
             {
                 for (int x = 0; x < cfCount - 1; x++)
                 {
-                    if (cfgContents[x].Contains("id"))
+                    if (cfgContents[x].Contains(Localizer.Format("#LOC_PLUM_1")))
                     {
                         if (cfgContents[x].Contains(id))
                         {

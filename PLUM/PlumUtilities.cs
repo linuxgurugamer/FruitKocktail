@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -229,13 +230,13 @@ namespace ParachutesLetsUseMaths
             switch (_chute)
             {
                 case 1:
-                    chuteName = "parachuteRadial";
+                    chuteName = Localizer.Format("#LOC_PLUM_46");
                     break;
                 case 4:
-                    chuteName = "radialDrogue";
+                    chuteName = Localizer.Format("#LOC_PLUM_47");
                     break;
                 default:
-                    chuteName = "ERROR";
+                    chuteName = Localizer.Format("#LOC_PLUM_48");
                     break;
             }
 

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30523.141
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APPLE", "APPLE\APPLE.csproj", "{4C19880B-53BE-422C-88C0-9469192D46B2}"
 EndProject
@@ -46,6 +46,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MANGO", "MANGO\MANGO.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MANGO Solution Items", "MANGO Solution Items", "{6B5BE3FF-01FC-483F-9F86-EFF48AC2ADD0}"
 	ProjectSection(SolutionItems) = preProject
+		MANGO\CHANGELOG.txt = MANGO\CHANGELOG.txt
 		MANGO\MANGO.version = MANGO\MANGO.version
 		MANGO\README.md = MANGO\README.md
 	EndProjectSection

@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -51,18 +52,20 @@ namespace OhReallyAnotherNamingEndeavour
                 {
                     pathErrorsDetected = true;
                     Debug.LogError("ERROR: ORANGE - required path to PluginData does not exist (/GameData/FruitKocktail/ORANGE/PluginData/). " +
-                        "Please check installation. ORANGE IS NOW DISABLED!");
+                        Localizer.Format("#LOC_ORANGE_1"));
                 }
                 else
                 {
+                    #region NO_LOCALIZATION
                     pathToFirst = pathToData + "first.txt";
                     pathToSecond = pathToData + "second.txt";
+                    #endregion
 
                     if (!File.Exists(pathToFirst))
                     {
                         pathErrorsDetected = true;
                         Debug.LogError("ERROR: ORANGE - required file does not exist (first.txt). " +
-                        "Please check installation. ORANGE IS NOW DISABLED!");
+                        Localizer.Format("#LOC_ORANGE_1"));
                     }
                     if (!File.Exists(pathToSecond))
                     {

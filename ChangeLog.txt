@@ -10,3 +10,6 @@ ChangeLog
 0.0.0.3
 	Fixed VSIndicator toolbar texture references
 	Added AssemblyFileVersion to all modlets
+
+0.0.1
+	Localized the mods

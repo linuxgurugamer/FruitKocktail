@@ -1,4 +1,5 @@
-﻿using KSP.UI.Screens.Flight;
+using KSP.Localization;
+using KSP.UI.Screens.Flight;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -54,7 +55,7 @@ namespace VSIndicator
         // allows subclasses to check navball setting
         public static bool GetTM2Text()
         {
-            if (Instance.tM2.text == "Surface")
+            if (Instance.tM2.text == Localizer.Format("#LOC_VSIndicator_10"))
             {
                 return true;
             }
@@ -134,8 +135,8 @@ namespace VSIndicator
                 {
                     if (vSIOptions.ascCol == null)
                     {
-                        savedA = cD.GetColour("Green");
-                        vSIOptions.ascCol = "Green";
+                        savedA = cD.GetColour(Localizer.Format("#LOC_VSIndicator_1"));
+                        vSIOptions.ascCol = Localizer.Format("#LOC_VSIndicator_1");
                     }
                     else
                     {
@@ -145,8 +146,8 @@ namespace VSIndicator
 
                     if (vSIOptions.desCol == null)
                     {
-                        savedD = cD.GetColour("Red");
-                        vSIOptions.desCol = "Red";
+                        savedD = cD.GetColour(Localizer.Format("#LOC_VSIndicator_2"));
+                        vSIOptions.desCol = Localizer.Format("#LOC_VSIndicator_2");
                     }
 
                     else
@@ -156,8 +157,8 @@ namespace VSIndicator
 
                     if (vSIOptions.safCol == null)
                     {
-                        savedS = cD.GetColour("Green");
-                        vSIOptions.safCol = "Green";
+                        savedS = cD.GetColour(Localizer.Format("#LOC_VSIndicator_1"));
+                        vSIOptions.safCol = Localizer.Format("#LOC_VSIndicator_1");
                     }
                 }
 
@@ -174,7 +175,7 @@ namespace VSIndicator
         {
             // if not surface mode then set to stock green
 
-            if (tM2.text != "Surface")
+            if (tM2.text != Localizer.Format("#LOC_VSIndicator_10"))
             {
                 if (tM.color != stockGreen)
                 {
@@ -242,7 +243,7 @@ namespace VSIndicator
         {
             // if we're not landed and navball is in surface mode
 
-            if (!FlightGlobals.ActiveVessel.Landed && tM2.text == "Surface")
+            if (!FlightGlobals.ActiveVessel.Landed && tM2.text == Localizer.Format("#LOC_VSIndicator_10"))
             {
                 double verticalSpeed = FlightGlobals.ActiveVessel.verticalSpeed;
                 double safeSpeed = double.Parse(VSIGUI.selV.ToString()) * -1;
@@ -264,7 +265,7 @@ namespace VSIndicator
 
             // if we land set back to green
 
-            else if ( FlightGlobals.ActiveVessel.Landed && tM2.text == "Surface")
+            else if ( FlightGlobals.ActiveVessel.Landed && tM2.text == Localizer.Format("#LOC_VSIndicator_10"))
             {
                 colourSet = false;
             }

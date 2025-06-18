@@ -1,4 +1,5 @@
-﻿using ModuleWheels;
+using KSP.Localization;
+using ModuleWheels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -208,7 +209,7 @@ namespace AutomatedPopularPreLaunchExperiment
                                 }
                                 else if (part.HasModuleImplementing<ModuleColorChanger>())
                                 {
-                                    part.SendEvent("Lights On");
+                                    part.SendEvent(Localizer.Format("#LOC_APPLE_4"));
                                 }
                             }
 
@@ -230,7 +231,7 @@ namespace AutomatedPopularPreLaunchExperiment
                                 }
                                 else if (part.HasModuleImplementing<ModuleColorChanger>())
                                 {
-                                    part.SendEvent("Lights Off");
+                                    part.SendEvent(Localizer.Format("#LOC_APPLE_5"));
                                 }
                             }
                             FlightGlobals.ActiveVessel.ActionGroups.SetGroup(KSPActionGroup.Light, false);

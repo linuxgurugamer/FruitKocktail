@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -9,10 +10,10 @@ namespace VSIndicator
 {
     public class VSIOptions : GameParameters.CustomParameterNode
     {
-        public override string Title { get { return "Button Settings"; } }
+        public override string Title { get { return Localizer.Format("#LOC_VSIndicator_16"); } }
         public override GameParameters.GameMode GameMode { get { return GameParameters.GameMode.ANY; } }
-        public override string Section { get { return "Vertikal Speed Indicator"; } }
-        public override string DisplaySection { get { return "Vertikal Speed Indicator"; } }
+        public override string Section { get { return Localizer.Format("#LOC_VSIndicator_17"); } }
+        public override string DisplaySection { get { return Localizer.Format("#LOC_VSIndicator_17"); } }
         public override int SectionOrder { get { return 1; } }
         public override bool HasPresets { get { return true; } }
 
@@ -38,7 +39,7 @@ namespace VSIndicator
 
         public override bool Enabled(MemberInfo member, GameParameters parameters)
         {
-            if (member.Name == "EnabledForSave")
+            if (member.Name == Localizer.Format("#LOC_VSIndicator_18"))
                 return true;
 
             return true;

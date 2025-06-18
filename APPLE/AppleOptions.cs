@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -9,10 +10,10 @@ namespace AutomatedPopularPreLaunchExperiment
 {
     public class AppleOptions : GameParameters.CustomParameterNode
     {
-        public override string Title { get { return "General Settings"; } }
+        public override string Title { get { return Localizer.Format("#LOC_APPLE_1"); } }
         public override GameParameters.GameMode GameMode { get { return GameParameters.GameMode.ANY; } }
-        public override string Section { get { return "APPLE"; } }
-        public override string DisplaySection { get { return "APPLE"; } }
+        public override string Section { get { return Localizer.Format("#LOC_APPLE_2"); } }
+        public override string DisplaySection { get { return Localizer.Format("#LOC_APPLE_2"); } }
         public override int SectionOrder { get { return 1; } }
         public override bool HasPresets { get { return true; } }
 
@@ -52,7 +53,7 @@ namespace AutomatedPopularPreLaunchExperiment
 
         public override bool Enabled(MemberInfo member, GameParameters parameters)
         {
-            if (member.Name == "EnabledForSave")
+            if (member.Name == Localizer.Format("#LOC_APPLE_3"))
                 return true;
 
             return true;

@@ -1,14 +1,9 @@
-﻿using KSP.UI.Screens;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
-using UnityEngine.UI;
-
-
-using ToolbarControl_NS;
+using KSP.Localization;
 using ClickThroughFix;
+using KSP.UI.Screens;
+using System;
+using ToolbarControl_NS;
+using UnityEngine;
 
 namespace VSIndicator
 {
@@ -58,15 +53,15 @@ namespace VSIndicator
         // toggle button labels
         public static string[] cols =
         {
-            "Green",
-            "Red",
-            "Orange",
-            "Yellow",
-            "Cyan",
-            "Blue",
-            "Magenta",
-            "Pink",
-            "White",
+            Localizer.Format("#LOC_VSIndicator_1"),
+            Localizer.Format("#LOC_VSIndicator_2"),
+            Localizer.Format("#LOC_VSIndicator_3"),
+            Localizer.Format("#LOC_VSIndicator_4"),
+            Localizer.Format("#LOC_VSIndicator_5"),
+            Localizer.Format("#LOC_VSIndicator_6"),
+            Localizer.Format("#LOC_VSIndicator_7"),
+            Localizer.Format("#LOC_VSIndicator_8"),
+            Localizer.Format("#LOC_VSIndicator_9"),
         };
 
 
@@ -79,6 +74,7 @@ namespace VSIndicator
         internal const string MODID = "VSIndicator";
         internal const string MODNAME = "VSIndicator";
 
+        #region NO_LOCALIZATION
         void CreateToolbarButton()
         {
             toolbarControl = gameObject.AddComponent<ToolbarControl>();
@@ -94,6 +90,7 @@ namespace VSIndicator
             toolbarControl.SetTexture("FruitKocktail/VSIndicator/PluginData/Icons/vsioff-38",
                 "FruitKocktail/VSIndicator/Icons/vsioff-24");
         }
+        #endregion
 
         bool hide = false;
         void OnHideUI() { hide = true; }
@@ -170,31 +167,31 @@ namespace VSIndicator
                     switch (selA)
                     {
                         case 0:
-                            labelStyle.normal.textColor = cD.GetColour("Green");
+                            labelStyle.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_1"));
                             break;
                         case 1:
-                            labelStyle.normal.textColor = cD.GetColour("Red");
+                            labelStyle.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_2"));
                             break;
                         case 2:
-                            labelStyle.normal.textColor = cD.GetColour("Orange");
+                            labelStyle.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_3"));
                             break;
                         case 3:
-                            labelStyle.normal.textColor = cD.GetColour("Yellow");
+                            labelStyle.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_4"));
                             break;
                         case 4:
-                            labelStyle.normal.textColor = cD.GetColour("Cyan");
+                            labelStyle.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_5"));
                             break;
                         case 5:
-                            labelStyle.normal.textColor = cD.GetColour("Blue");
+                            labelStyle.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_6"));
                             break;
                         case 6:
-                            labelStyle.normal.textColor = cD.GetColour("Magenta");
+                            labelStyle.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_7"));
                             break;
                         case 7:
-                            labelStyle.normal.textColor = cD.GetColour("Pink");
+                            labelStyle.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_8"));
                             break;
                         case 8:
-                            labelStyle.normal.textColor = cD.GetColour("White");
+                            labelStyle.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_9"));
                             break;
                     }
                 }
@@ -206,31 +203,31 @@ namespace VSIndicator
                     switch (selD)
                     {
                         case 0:
-                            labelStyleD.normal.textColor = cD.GetColour("Green");
+                            labelStyleD.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_1"));
                             break;
                         case 1:
-                            labelStyleD.normal.textColor = cD.GetColour("Red");
+                            labelStyleD.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_2"));
                             break;
                         case 2:
-                            labelStyleD.normal.textColor = cD.GetColour("Orange");
+                            labelStyleD.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_3"));
                             break;
                         case 3:
-                            labelStyleD.normal.textColor = cD.GetColour("Yellow");
+                            labelStyleD.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_4"));
                             break;
                         case 4:
-                            labelStyleD.normal.textColor = cD.GetColour("Cyan");
+                            labelStyleD.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_5"));
                             break;
                         case 5:
-                            labelStyleD.normal.textColor = cD.GetColour("Blue");
+                            labelStyleD.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_6"));
                             break;
                         case 6:
-                            labelStyleD.normal.textColor = cD.GetColour("Magenta");
+                            labelStyleD.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_7"));
                             break;
                         case 7:
-                            labelStyleD.normal.textColor = cD.GetColour("Pink");
+                            labelStyleD.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_8"));
                             break;
                         case 8:
-                            labelStyleD.normal.textColor = cD.GetColour("White");
+                            labelStyleD.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_9"));
                             break;
                     }
                 }
@@ -242,31 +239,31 @@ namespace VSIndicator
                     switch (selS)
                     {
                         case 0:
-                            labelStyleS.normal.textColor = cD.GetColour("Green");
+                            labelStyleS.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_1"));
                             break;
                         case 1:
-                            labelStyleS.normal.textColor = cD.GetColour("Red");
+                            labelStyleS.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_2"));
                             break;
                         case 2:
-                            labelStyleS.normal.textColor = cD.GetColour("Orange");
+                            labelStyleS.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_3"));
                             break;
                         case 3:
-                            labelStyleS.normal.textColor = cD.GetColour("Yellow");
+                            labelStyleS.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_4"));
                             break;
                         case 4:
-                            labelStyleS.normal.textColor = cD.GetColour("Cyan");
+                            labelStyleS.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_5"));
                             break;
                         case 5:
-                            labelStyleS.normal.textColor = cD.GetColour("Blue");
+                            labelStyleS.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_6"));
                             break;
                         case 6:
-                            labelStyleS.normal.textColor = cD.GetColour("Magenta");
+                            labelStyleS.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_7"));
                             break;
                         case 7:
-                            labelStyleS.normal.textColor = cD.GetColour("Pink");
+                            labelStyleS.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_8"));
                             break;
                         case 8:
-                            labelStyleS.normal.textColor = cD.GetColour("White");
+                            labelStyleS.normal.textColor = cD.GetColour(Localizer.Format("#LOC_VSIndicator_9"));
                             break;
                     }
                 }
@@ -293,8 +290,7 @@ namespace VSIndicator
             if (isSurface)
             {
                 btnIsPressed = true;
-                toolbarControl.SetTexture("FruitKocktail/VSIndicator/PluginData/Icons/vsion-38",
-                    "FruitKocktail/VSIndicator/Icons/vsion-24");
+                toolbarControl.SetTexture("FruitKocktail/VSIndicator/PluginData/Icons/vsion-38", "FruitKocktail/VSIndicator/Icons/vsion-24");
             }
         }
 
@@ -303,8 +299,7 @@ namespace VSIndicator
             // ie when clicked off
             if (btnIsPressed)
             {
-                toolbarControl.SetTexture("FruitKocktail/VSIndicator/PluginData/Icons/vsioff-38",
-                    "FruitKocktail/VSIndicator/Icons/vsioff-24");
+                toolbarControl.SetTexture("FruitKocktail/VSIndicator/PluginData/Icons/vsioff-38", "FruitKocktail/VSIndicator/Icons/vsioff-24");
                 btnIsPressed = false;
             }
         }
@@ -350,7 +345,7 @@ namespace VSIndicator
         {
 
             guiPos = ClickThruBlocker.GUIWindow(123457, guiPos, MenuWindow,
-                "Select Colour Preferences", new GUIStyle(HighLogic.Skin.window));
+                Localizer.Format("#LOC_VSIndicator_11"), new GUIStyle(HighLogic.Skin.window));
 
 
 
@@ -377,22 +372,22 @@ namespace VSIndicator
 
             closeBtn = GUI.Button(new Rect(menuSR.x - 30, 0, 30, 30), "X", new GUIStyle(HighLogic.Skin.button));
 
-            GUI.Label(new Rect(40, 40, menuSR.x / 3, 25), "Ascending Colour = ", labelStyle2);
+            GUI.Label(new Rect(40, 40, menuSR.x / 3, 25), Localizer.Format("#LOC_VSIndicator_12"), labelStyle2);
             GUI.Label(new Rect(menuSR.x / 3 + 20, 40, menuSR.x / 3, 25), cols[selA], labelStyle);
             selA = (int)GUI.HorizontalSlider(new Rect(40, 80, menuSR.x - 80, 25), selA, 0, 8, new GUIStyle(HighLogic.Skin.horizontalSlider),
                 new GUIStyle(HighLogic.Skin.horizontalSliderThumb));
 
-            GUI.Label(new Rect(40, 105, menuSR.x / 3, 25), "Descending Colour = ", labelStyle2);
+            GUI.Label(new Rect(40, 105, menuSR.x / 3, 25), Localizer.Format("#LOC_VSIndicator_13"), labelStyle2);
             GUI.Label(new Rect(menuSR.x / 3 + 20, 105, menuSR.x / 3, 25), cols[selD], labelStyleD);
             selD = (int)GUI.HorizontalSlider(new Rect(40, 145, menuSR.x - 80, 25), selD, 0, 8, new GUIStyle(HighLogic.Skin.horizontalSlider),
                 new GUIStyle(HighLogic.Skin.horizontalSliderThumb));
 
-            GUI.Label(new Rect(40, 180, menuSR.x / 3, 25), "Safe Velocity Colour = ", labelStyle2);
+            GUI.Label(new Rect(40, 180, menuSR.x / 3, 25), Localizer.Format("#LOC_VSIndicator_14"), labelStyle2);
             GUI.Label(new Rect(menuSR.x / 3 + 20, 180, menuSR.x / 3, 25), cols[selS], labelStyleS);
             selS = (int)GUI.HorizontalSlider(new Rect(40, 220, menuSR.x - 80, 25), selS, 0, 8, new GUIStyle(HighLogic.Skin.horizontalSlider),
                 new GUIStyle(HighLogic.Skin.horizontalSliderThumb));
 
-            GUI.Label(new Rect(40, 245, menuSR.x - 80, 25), "Safe Velocity, m/s2 = " + Math.Round(selV, 1), labelStyle2);
+            GUI.Label(new Rect(40, 245, menuSR.x - 80, 25), Localizer.Format("#LOC_VSIndicator_15") + Math.Round(selV, 1), labelStyle2);
             selV = GUI.HorizontalSlider(new Rect(40, 285, menuSR.x - 80, 25), selV, 0, 20, new GUIStyle(HighLogic.Skin.horizontalSlider),
                 new GUIStyle(HighLogic.Skin.horizontalSliderThumb));
 

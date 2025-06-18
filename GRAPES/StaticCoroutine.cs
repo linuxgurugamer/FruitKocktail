@@ -1,4 +1,5 @@
-﻿using System.Collections;
+using KSP.Localization;
+using System.Collections;
 using UnityEngine;
 
 namespace GasRepairsAndProbablyExpensiveSnacks
@@ -37,7 +38,7 @@ namespace GasRepairsAndProbablyExpensiveSnacks
                 return instance; 
             }
 
-            GameObject instanceObject = new GameObject("StaticCoroutine");
+            GameObject instanceObject = new GameObject(Localizer.Format("#LOC_GRAPES_32"));
             instanceObject.AddComponent<StaticCoroutine>();
             instance = instanceObject.GetComponent<StaticCoroutine>();
 

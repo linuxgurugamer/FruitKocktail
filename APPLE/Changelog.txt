@@ -1,5 +1,8 @@
 Changelog
 
+1.1.10
+	Localized the mod
+
 1.1.9.1 
 	minor optimization 
 	Added AssemblyFileVersion

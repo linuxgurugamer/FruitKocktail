@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using KSP.UI;
-using KSP.UI.Screens;
-using UnityEngine;
-using UnityEngine.UI;
-
-using ToolbarControl_NS;
+using KSP.Localization;
 using ClickThroughFix;
+using KSP.UI.Screens;
+using ToolbarControl_NS;
+using UnityEngine;
 
 namespace LieInMustEnsue
 {
@@ -25,7 +18,7 @@ namespace LieInMustEnsue
         public static int selGridInt = 1;
 
         // menu options
-        public static string[] selString = new string[] { "Sunrise (Stock)", "Sunny", "Sunset", "Midnight" };
+        public static string[] selString = new string[] { Localizer.Format("#LOC_LIME_1"), Localizer.Format("#LOC_LIME_2"), Localizer.Format("#LOC_LIME_3"), Localizer.Format("#LOC_LIME_4") };
 
         // close button on menu
         public static bool closeBtn;
@@ -54,7 +47,7 @@ namespace LieInMustEnsue
             menuPos = new Rect(menuPR, menuSR);
 
 
-
+            #region NO_LOCALIZATION
             if (toolbarControl == null)
             {
                 toolbarControl = gameObject.AddComponent<ToolbarControl>();
@@ -73,6 +66,8 @@ namespace LieInMustEnsue
 
             toolbarControl.SetTexture("FruitKocktail/LIME/PluginData/Icons/limeoff-38",
                  "FruitKocktail/LIME/PluginData/Icons/limeoff-24");
+
+            #endregion
         }
 
         private static void ItsLimeTime()
@@ -81,7 +76,7 @@ namespace LieInMustEnsue
             // instantiate the menu
 
             menuPos = ClickThruBlocker.GUILayoutWindow(123456, menuPos, MenuWindow,
-                "LIME Time Options", new GUIStyle(HighLogic.Skin.window));
+                Localizer.Format("#LOC_LIME_5"), new GUIStyle(HighLogic.Skin.window));
 
         }
 
@@ -100,12 +95,12 @@ namespace LieInMustEnsue
 
             GUILayout.BeginHorizontal();
 
-            if ( GUI.Button(new Rect(20, 200, 160, 25), "Close", new GUIStyle(HighLogic.Skin.button)))
+            if (GUI.Button(new Rect(20, 200, 160, 25), Localizer.Format("#LOC_LIME_6"), new GUIStyle(HighLogic.Skin.button)))
             {
-                    LIME.newMode = selGridInt;
-                    //limeBtn.SetFalse();
-                    toolbarControl.SetFalse();
-                    closeBtn = false;
+                LIME.newMode = selGridInt;
+                //limeBtn.SetFalse();
+                toolbarControl.SetFalse();
+                closeBtn = false;
 
             }
 
@@ -132,8 +127,7 @@ namespace LieInMustEnsue
         public void onTrue()
         {
             // ie when clicked on
-            toolbarControl.SetTexture("FruitKocktail/LIME/PluginData/Icons/limeon-38",
-                    "FruitKocktail/LIME/PluginData/Icons/limeon-24");
+            toolbarControl.SetTexture("FruitKocktail/LIME/PluginData/Icons/limeon-38", "FruitKocktail/LIME/PluginData/Icons/limeon-24");
             btnIsPressed = true;
 
         }
@@ -141,8 +135,7 @@ namespace LieInMustEnsue
         public void onFalse()
         {
             // ie when clicked off
-            toolbarControl.SetTexture("FruitKocktail/LIME/PluginData/Icons/limeoff-38",
-                    "FruitKocktail/LIME/PluginData/Icons/limeoff-24");
+            toolbarControl.SetTexture("FruitKocktail/LIME/PluginData/Icons/limeoff-38", "FruitKocktail/LIME/PluginData/Icons/limeoff-24");
             btnIsPressed = false;
         }
 
@@ -152,8 +145,7 @@ namespace LieInMustEnsue
 
             if (!btnIsPressed)
             {
-                toolbarControl.SetTexture("FruitKocktail/LIME/PluginData/Icons/limeoff-38",
-                        "FruitKocktail/LIME/PluginData/Icons/limeoff-24");
+                toolbarControl.SetTexture("FruitKocktail/LIME/PluginData/Icons/limeoff-38", "FruitKocktail/LIME/PluginData/Icons/limeoff-24");
             }
         }
 
@@ -163,8 +155,7 @@ namespace LieInMustEnsue
 
             if (!btnIsPressed)
             {
-                toolbarControl.SetTexture("FruitKocktail/LIME/PluginData/Icons/limeoff-38",
-        "FruitKocktail/LIME/PluginData/Icons/limeoff-24");
+                toolbarControl.SetTexture("FruitKocktail/LIME/PluginData/Icons/limeoff-38", "FruitKocktail/LIME/PluginData/Icons/limeoff-24");
 
             }
         }

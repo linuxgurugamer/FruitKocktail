@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -51,12 +52,12 @@ namespace ProgramaticExtensionAndRetraction
                 if (pPC.isPowerOn)
                 {
                     pPC.isPowerOn = false;
-                    pPC.pearStatus = "OFFLINE";
+                    pPC.pearStatus = Localizer.Format("#LOC_PEAR_1");
                 }
                 else
                 {
                     pPC.isPowerOn = true;
-                    pPC.pearStatus = "Active";
+                    pPC.pearStatus = Localizer.Format("#LOC_PEAR_2");
                 }
             }
 
@@ -65,23 +66,23 @@ namespace ProgramaticExtensionAndRetraction
                 if (!pPC.isPowerOn && sender == 0)
                 {
                     pPC.isPowerOn = false;
-                    pPC.pearStatus = "OFFLINE";
+                    pPC.pearStatus = Localizer.Format("#LOC_PEAR_1");
                 }
                 else if (pPC.isPowerOn && sender == 0)
                 {
                     pPC.isPowerOn = true;
-                    pPC.pearStatus = "Active";
+                    pPC.pearStatus = Localizer.Format("#LOC_PEAR_2");
 
                 }
                 else if (pPC.isPowerOn && sender == 1)
                 {
                     pPC.isPowerOn = false;
-                    pPC.pearStatus = "OFFLINE";
+                    pPC.pearStatus = Localizer.Format("#LOC_PEAR_1");
                 }
                 else if (!pPC.isPowerOn && sender == 1)
                 {
                     pPC.isPowerOn = true;
-                    pPC.pearStatus = "Active";
+                    pPC.pearStatus = Localizer.Format("#LOC_PEAR_2");
                 }
                                
                 SetPearModule(_part, pPC);

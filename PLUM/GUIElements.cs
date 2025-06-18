@@ -1,12 +1,10 @@
-﻿using KSP.UI.Screens;
+using KSP.Localization;
+using KSP.UI.Screens;
+using SpaceTuxUtility;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
 using ToolbarControl_NS;
-using ClickThroughFix;
-using SpaceTuxUtility;
+using UnityEngine;
 
 //using RealChute;
 
@@ -72,7 +70,7 @@ namespace ParachutesLetsUseMaths
         public static bool saveOptionsBtn;
 
         // save status for save button
-        public static string saveStatus = "Saved";
+        public static string saveStatus = Localizer.Format("#LOC_PLUM_2");
 
         // options close button
         public static bool optCloseBtn;
@@ -112,11 +110,11 @@ namespace ParachutesLetsUseMaths
         // the bodies to pick from
         public static string[] bodies =
         {
-            "Kerbin",
-            "Eve",
-            "Duna",
-            "Laythe",
-            "Custom",
+            Localizer.Format("#LOC_PLUM_3"),
+            Localizer.Format("#LOC_PLUM_4"),
+            Localizer.Format("#LOC_PLUM_5"),
+            Localizer.Format("#LOC_PLUM_6"),
+            Localizer.Format("#LOC_PLUM_7"),
         };
 
         // the velocities to chose from
@@ -137,11 +135,11 @@ namespace ParachutesLetsUseMaths
 
         public static string[] chuteChoices =
         {
-            "Mk16",
-            "Mk2r (Radial)",
-            "Mk16-XL",
-            "Mk25 (Drogue)",
-            "Mk12r (Drogue, Radial)",
+            Localizer.Format("#LOC_PLUM_8"),
+            Localizer.Format("#LOC_PLUM_9"),
+            Localizer.Format("#LOC_PLUM_10"),
+            Localizer.Format("#LOC_PLUM_11"),
+            Localizer.Format("#LOC_PLUM_12"),
         };
 
         // custom GUIStyles
@@ -178,7 +176,7 @@ namespace ParachutesLetsUseMaths
         public void Start()
         {
             Instance = this;
-            HasRealChutes = HasMod.hasMod("RealChute");
+            HasRealChutes = HasMod.hasMod(Localizer.Format("#LOC_PLUM_13"));
 
             if (optionsTxt == null)
             {
@@ -206,6 +204,7 @@ namespace ParachutesLetsUseMaths
             gravityCustom = "";
             calcPick = calcPick == 0 ? 8 : calcPick;
 
+            #region NO_LOCALIZATION
             // instantiate the button
             if (toolbarControl == null)
             {
@@ -221,6 +220,8 @@ namespace ParachutesLetsUseMaths
 
                 //toolbarControl.SetTexture("FruitKocktail/PLUM/PluginData/Icons/plumOff-38",
                 //    "FruitKocktail/PLUM/PluginData/Icons/plumOff-24");
+
+                #endregion
             }
 
             // define our custom styles
@@ -427,7 +428,7 @@ namespace ParachutesLetsUseMaths
                 if (prevFile)
                 {
                     prevFile = false;
-                    saveStatus = "Saved";
+                    saveStatus = Localizer.Format("#LOC_PLUM_2");
 
                     if (customFileSelection != 0)
                     {
@@ -444,7 +445,7 @@ namespace ParachutesLetsUseMaths
                 if (nextFile)
                 {
                     nextFile = false;
-                    saveStatus = "Saved";
+                    saveStatus = Localizer.Format("#LOC_PLUM_2");
 
                     if (customFileSelection != 8)
                     {
@@ -463,7 +464,7 @@ namespace ParachutesLetsUseMaths
                 {
                     saveOptionsBtn = false;
                     cfgHandler.SaveProfile(customFileSelection, customName, customGravVal, customAirDensity, chute0, chute1, chute2, chute3, chute4);
-                    saveStatus = "Saved";
+                    saveStatus = Localizer.Format("#LOC_PLUM_2");
 
                 }
 
@@ -493,7 +494,7 @@ namespace ParachutesLetsUseMaths
         {
             //return part.HasModuleImplementing<RealChuteModule>();
             for (int i = 0; i < part.Modules.Count; i++)
-                if (part.Modules[i].moduleName == "RealChuteModule")
+                if (part.Modules[i].moduleName == Localizer.Format("#LOC_PLUM_14"))
                     return true;
             return false;
         }
@@ -517,7 +518,7 @@ namespace ParachutesLetsUseMaths
                 if (paraCount == 0)
                 {
                     chutesOnboard = false;
-                    return "No Parachutes Onboard!";
+                    return Localizer.Format("#LOC_PLUM_15");
                 }
                 else
                 {
@@ -607,7 +608,7 @@ namespace ParachutesLetsUseMaths
 
                 else
                 {
-                    return "Multiple Chutes";
+                    return Localizer.Format("#LOC_PLUM_16");
                 }
             }
             else return null;
@@ -719,22 +720,22 @@ namespace ParachutesLetsUseMaths
             closeBtn = GUI.Button(new Rect(menuSize.x - 35, 0, 35, 35), closeTxt, styleBtn);
             optionsBtn = GUI.Button(new Rect(menuSize.x - 70, 0, 35, 35), optionsTxt, styleOptionBtn);
 
-            GUI.Label(new Rect(50, 35, menuSize.x - 100, 25), "Select Celestial Body:", styleLabel);
+            GUI.Label(new Rect(50, 35, menuSize.x - 100, 25), Localizer.Format("#LOC_PLUM_17"), styleLabel);
             celPick = GUI.SelectionGrid(new Rect(50, 70, menuSize.x - 100, 25), celPick, bodies, 5, styleToggle);
 
-            GUI.Label(new Rect(50, 125, menuSize.x - 100, 25), "Choose Maximum Velocity: " + calcPick + " m/s", styleLabel);
+            GUI.Label(new Rect(50, 125, menuSize.x - 100, 25), Localizer.Format("#LOC_PLUM_18") + calcPick + Localizer.Format("#LOC_PLUM_19"), styleLabel);
             calcPick = (int)GUI.HorizontalSlider(new Rect(50, 170, menuSize.x - 100, 25), calcPick, 0, 10, new GUIStyle(HighLogic.Skin.horizontalSlider),
                 new GUIStyle(HighLogic.Skin.horizontalSliderThumb));
 
-            GUI.Label(new Rect(50, 225, menuSize.x - 100, 25), "Calculations", styleLabel);
+            GUI.Label(new Rect(50, 225, menuSize.x - 100, 25), Localizer.Format("#LOC_PLUM_20"), styleLabel);
             GUI.Box(new Rect(50, 250, menuSize.x - 100, 225), GUIContent.none, styleBox);
-            GUI.Label(new Rect(75, 275, menuSize.x - 150, 25), "Parachute Quantity = " + GetParachuteQty(), styleLabel2);
-            GUI.Label(new Rect(75, 300, menuSize.x - 150, 25), "Vessel (Wet) Mass, Kg = " + GetVesselMass(), styleLabel2);
-            GUI.Label(new Rect(75, 325, menuSize.x - 150, 25), "Planetary Profile = " + GetPlanetProfile(), styleLabel2);
-            GUI.Label(new Rect(75, 350, menuSize.x - 150, 25), "Surface Gravity, m/s2 = " + GetSurfaceGravity(), styleLabel2);
-            GUI.Label(new Rect(75, 375, menuSize.x - 150, 25), "Air Density, Kg/m3 = " + GetATD(), styleLabel2);
-            GUI.Label(new Rect(75, 400, menuSize.x - 150, 25), "Parachute Magnitude Factor, bPmf = " + GetBValue(), styleLabel2);
-            GUI.Label(new Rect(75, 425, menuSize.x - 150, 25), "Approximate Touchdown Velocity, m/s = " + GetTDVelocity(), styleLabel3);
+            GUI.Label(new Rect(75, 275, menuSize.x - 150, 25), Localizer.Format("#LOC_PLUM_21") + GetParachuteQty(), styleLabel2);
+            GUI.Label(new Rect(75, 300, menuSize.x - 150, 25), Localizer.Format("#LOC_PLUM_22") + GetVesselMass(), styleLabel2);
+            GUI.Label(new Rect(75, 325, menuSize.x - 150, 25), Localizer.Format("#LOC_PLUM_23") + GetPlanetProfile(), styleLabel2);
+            GUI.Label(new Rect(75, 350, menuSize.x - 150, 25), Localizer.Format("#LOC_PLUM_24") + GetSurfaceGravity(), styleLabel2);
+            GUI.Label(new Rect(75, 375, menuSize.x - 150, 25), Localizer.Format("#LOC_PLUM_25") + GetATD(), styleLabel2);
+            GUI.Label(new Rect(75, 400, menuSize.x - 150, 25), Localizer.Format("#LOC_PLUM_26") + GetBValue(), styleLabel2);
+            GUI.Label(new Rect(75, 425, menuSize.x - 150, 25), Localizer.Format("#LOC_PLUM_27") + GetTDVelocity(), styleLabel3);
 
 
             GUI.DragWindow();
@@ -748,23 +749,23 @@ namespace ParachutesLetsUseMaths
         {
             GUI.BeginGroup(new Rect(0, 0, optSize.x, optSize.y));
 
-            GUI.SetNextControlName("abc");
+            GUI.SetNextControlName(Localizer.Format("#LOC_PLUM_28"));
             GUI.Box(new Rect(0, 0, optSize.x, optSize.y), GUIContent.none);
 
             prevFile = GUI.Button(new Rect(50, 35, 50, 25), "<", styleBtn);
             nextFile = GUI.Button(new Rect(optSize.x - 100, 35, 50, 25), ">", styleBtn);
 
-            GUI.SetNextControlName("customNamePanel");
+            GUI.SetNextControlName(Localizer.Format("#LOC_PLUM_29"));
             customName = GUI.TextField(new Rect(100, 35, optSize.x - 200, 35), customName, styleTextField);
 
             if ((Event.current.isKey && (Event.current.keyCode == KeyCode.KeypadEnter || Event.current.keyCode == KeyCode.Return)
-                && GUI.GetNameOfFocusedControl() == "customNamePanel"))
+                && GUI.GetNameOfFocusedControl() == Localizer.Format("#LOC_PLUM_29")))
             {
-                GUI.FocusControl("abc");
-                saveStatus = "UNSAVED*";
+                GUI.FocusControl(Localizer.Format("#LOC_PLUM_28"));
+                saveStatus = Localizer.Format("#LOC_PLUM_30");
             }
 
-            GUI.Label(new Rect(50, 80, optSize.x - 100, 25), "Surface Gravity, m/s2 = " + customGravVal, styleLabel);
+            GUI.Label(new Rect(50, 80, optSize.x - 100, 25), Localizer.Format("#LOC_PLUM_24") + customGravVal, styleLabel);
 
             customGravVal = GUI.HorizontalSlider(new Rect(50, 115, optSize.x - 100, 25), customGravVal, 0, 30, new GUIStyle(HighLogic.Skin.horizontalSlider),
                     new GUIStyle(HighLogic.Skin.horizontalSliderThumb));
@@ -772,14 +773,14 @@ namespace ParachutesLetsUseMaths
             if (GUI.changed)
             {
                 customGravVal = float.Parse(Math.Round(double.Parse(customGravVal.ToString()), 2).ToString());
-                saveStatus = "UNSAVED*";
+                saveStatus = Localizer.Format("#LOC_PLUM_30");
             }
 
             btnMinus1A = GUI.Button(new Rect(50, 140, (optSize.x - 100) / 2, 25), "- 0.01");
             btnAdd1A = GUI.Button(new Rect(((optSize.x - 100) / 2) + 50, 140, (optSize.x - 100) / 2, 25), "+ 0.01");
 
 
-            GUI.Label(new Rect(50, 185, optSize.x - 100, 25), "Air Density, kg/m3 = " + customAirDensity, styleLabel);
+            GUI.Label(new Rect(50, 185, optSize.x - 100, 25), Localizer.Format("#LOC_PLUM_31") + customAirDensity, styleLabel);
 
             customAirDensity = GUI.HorizontalSlider(new Rect(50, 220, optSize.x - 100, 25), customAirDensity, 0, 10, new GUIStyle(HighLogic.Skin.horizontalSlider),
                     new GUIStyle(HighLogic.Skin.horizontalSliderThumb));
@@ -787,21 +788,21 @@ namespace ParachutesLetsUseMaths
             if (GUI.changed)
             {
                 customAirDensity = float.Parse(Math.Round(double.Parse(customAirDensity.ToString()), 5).ToString());
-                saveStatus = "UNSAVED*";
+                saveStatus = Localizer.Format("#LOC_PLUM_30");
             }
 
-            btnMinus1B = GUI.RepeatButton(new Rect(50, 245, (optSize.x - 100) / 4, 25), "- Hold");
-            btnMinus1C = GUI.Button(new Rect(((optSize.x - 100) / 4) + 50, 245, (optSize.x - 100) / 4, 25), "- Single");
-            btnAdd1B = GUI.Button(new Rect((((optSize.x - 100) / 4) * 2) + 50, 245, (optSize.x - 100) / 4, 25), "+ Single");
-            btnAdd1C = GUI.RepeatButton(new Rect((((optSize.x - 100) / 4) * 3) + 50, 245, (optSize.x - 100) / 4, 25), "+ Hold");
+            btnMinus1B = GUI.RepeatButton(new Rect(50, 245, (optSize.x - 100) / 4, 25), Localizer.Format("#LOC_PLUM_32"));
+            btnMinus1C = GUI.Button(new Rect(((optSize.x - 100) / 4) + 50, 245, (optSize.x - 100) / 4, 25), Localizer.Format("#LOC_PLUM_33"));
+            btnAdd1B = GUI.Button(new Rect((((optSize.x - 100) / 4) * 2) + 50, 245, (optSize.x - 100) / 4, 25), Localizer.Format("#LOC_PLUM_34"));
+            btnAdd1C = GUI.RepeatButton(new Rect((((optSize.x - 100) / 4) * 3) + 50, 245, (optSize.x - 100) / 4, 25), Localizer.Format("#LOC_PLUM_35"));
 
-            GUI.Label(new Rect(50, 290, optSize.x - 100, 25), "Select Parachute: ", styleLabel);
-            prevChute = GUI.Button(new Rect(50, 315, (optSize.x - 100) / 2, 25), "Previous Chute");
-            nextChute = GUI.Button(new Rect(((optSize.x - 100) / 2) + 50, 315, (optSize.x - 100) / 2, 25), "Next Chute");
+            GUI.Label(new Rect(50, 290, optSize.x - 100, 25), Localizer.Format("#LOC_PLUM_36"), styleLabel);
+            prevChute = GUI.Button(new Rect(50, 315, (optSize.x - 100) / 2, 25), Localizer.Format("#LOC_PLUM_37"));
+            nextChute = GUI.Button(new Rect(((optSize.x - 100) / 2) + 50, 315, (optSize.x - 100) / 2, 25), Localizer.Format("#LOC_PLUM_38"));
 
-            GUI.Label(new Rect(50, 355, optSize.x - 100, 25), "Parachute = " + chuteChoices[chutePick], styleLabel);
-            GUI.Label(new Rect(50, 380, optSize.x - 100, 25), "Stock Drag Constant (Kerbin), Cd = " + pUtils.FetchDragDefault(chutePick), styleLabel);
-            GUI.Label(new Rect(50, 405, optSize.x - 100, 25), "Custom Drag Constant, Cd = " + customDragConstant, styleLabel);
+            GUI.Label(new Rect(50, 355, optSize.x - 100, 25), Localizer.Format("#LOC_PLUM_39") + chuteChoices[chutePick], styleLabel);
+            GUI.Label(new Rect(50, 380, optSize.x - 100, 25), Localizer.Format("#LOC_PLUM_40") + pUtils.FetchDragDefault(chutePick), styleLabel);
+            GUI.Label(new Rect(50, 405, optSize.x - 100, 25), Localizer.Format("#LOC_PLUM_41") + customDragConstant, styleLabel);
 
             customDragConstant = GUI.HorizontalSlider(new Rect(50, 440, optSize.x - 100, 25), customDragConstant, 0, 1000, new GUIStyle(HighLogic.Skin.horizontalSlider),
                     new GUIStyle(HighLogic.Skin.horizontalSliderThumb));
@@ -810,16 +811,16 @@ namespace ParachutesLetsUseMaths
             {
                 customDragConstant = float.Parse(Math.Round(double.Parse(customDragConstant.ToString()), 3).ToString());
                 SetChuteNewVal();
-                saveStatus = "UNSAVED*";
+                saveStatus = Localizer.Format("#LOC_PLUM_30");
             }
 
-            btnMinus1D = GUI.RepeatButton(new Rect(50, 465, (optSize.x - 100) / 4, 25), "- Hold");
-            btnMinus1E = GUI.Button(new Rect(((optSize.x - 100) / 4) + 50, 465, (optSize.x - 100) / 4, 25), "- Single");
-            btnAdd1D = GUI.Button(new Rect((((optSize.x - 100) / 4) * 2) + 50, 465, (optSize.x - 100) / 4, 25), "+ Single");
-            btnAdd1E = GUI.RepeatButton(new Rect((((optSize.x - 100) / 4) * 3) + 50, 465, (optSize.x - 100) / 4, 25), "+ Hold");
+            btnMinus1D = GUI.RepeatButton(new Rect(50, 465, (optSize.x - 100) / 4, 25), Localizer.Format("#LOC_PLUM_32"));
+            btnMinus1E = GUI.Button(new Rect(((optSize.x - 100) / 4) + 50, 465, (optSize.x - 100) / 4, 25), Localizer.Format("#LOC_PLUM_33"));
+            btnAdd1D = GUI.Button(new Rect((((optSize.x - 100) / 4) * 2) + 50, 465, (optSize.x - 100) / 4, 25), Localizer.Format("#LOC_PLUM_34"));
+            btnAdd1E = GUI.RepeatButton(new Rect((((optSize.x - 100) / 4) * 3) + 50, 465, (optSize.x - 100) / 4, 25), Localizer.Format("#LOC_PLUM_35"));
 
             saveOptionsBtn = GUI.Button(new Rect(50, 500, (optSize.x - 100) / 2, 40), saveStatus, styleBtn);
-            optCloseBtn = GUI.Button(new Rect(((optSize.x - 100) / 2) + 50, 500, (optSize.x - 100) / 2, 40), "Close", styleBtn);
+            optCloseBtn = GUI.Button(new Rect(((optSize.x - 100) / 2) + 50, 500, (optSize.x - 100) / 2, 40), Localizer.Format("#LOC_PLUM_42"), styleBtn);
 
             GUI.DragWindow();
 
@@ -830,13 +831,13 @@ namespace ParachutesLetsUseMaths
         public void ItsPlumTime()
         {
             guiPos = GUI.Window(123458, guiPos, MenuWindow,
-               "Parachutes? Let's Use Maths!", new GUIStyle(HighLogic.Skin.window));
+               Localizer.Format("#LOC_PLUM_43"), new GUIStyle(HighLogic.Skin.window));
         }
 
         // show the options
         public void ShowOptionsWindow()
         {
-            optPos = optionsPressed ? GUI.Window(123459, optPos, OptionsWindow, "Custom Options",
+            optPos = optionsPressed ? GUI.Window(123459, optPos, OptionsWindow, Localizer.Format("#LOC_PLUM_44"),
             new GUIStyle(HighLogic.Skin.window)) : new Rect(optPosition, optSize);
         }
 
@@ -873,8 +874,7 @@ namespace ParachutesLetsUseMaths
             if (btnIsPressed)
             {
                 //plumBtn.SetTexture(btnTxtOff);
-                toolbarControl.SetTexture("FruitKocktail/PLUM/PluginData/Icons/plumOff-38",
-                    "FruitKocktail/PLUM/PluginData/Icons/plumOff-24");
+                toolbarControl.SetTexture("FruitKocktail/PLUM/PluginData/Icons/plumOff-38", "FruitKocktail/PLUM/PluginData/Icons/plumOff-24");
                 btnIsPressed = false;
 
                 foreach (var part in EditorLogic.fetch.ship.parts)
@@ -1056,7 +1056,7 @@ namespace ParachutesLetsUseMaths
         // gets profile message
         public static string GetPlanetProfile()
         {
-            return celPick != 4 ? bodies[celPick] : "Custom Profile (" + customName + ")";
+            return celPick != 4 ? bodies[celPick] : Localizer.Format("#LOC_PLUM_45") + customName + ")";
         }
 
         // allows live update of chute value/touch down velocity

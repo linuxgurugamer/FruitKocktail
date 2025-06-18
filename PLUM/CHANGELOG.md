@@ -1,5 +1,8 @@
 Changelog
 
+1.1.4
+	Localized the mod
+
 1.1.3
 	Fixed support for installs which do NOT use RealChute
 

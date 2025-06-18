@@ -1,4 +1,5 @@
-﻿using Expansions.Missions.Adjusters;
+using KSP.Localization;
+using Expansions.Missions.Adjusters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -111,35 +112,35 @@ namespace GasRepairsAndProbablyExpensiveSnacks
 
             foreach (var part in FlightGlobals.ActiveVessel.Parts)
             {
-                if (part.Resources.Contains("LiquidFuel"))
+                if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_1")))
                 {
-                    if (part.Resources.Get("LiquidFuel").amount < part.Resources.Get("LiquidFuel").maxAmount)
+                    if (part.Resources.Get(Localizer.Format("#LOC_GRAPES_1")).amount < part.Resources.Get(Localizer.Format("#LOC_GRAPES_1")).maxAmount)
                     {
-                        Instance.lfDif += part.Resources.Get("LiquidFuel").maxAmount - part.Resources.Get("LiquidFuel").amount;
+                        Instance.lfDif += part.Resources.Get(Localizer.Format("#LOC_GRAPES_1")).maxAmount - part.Resources.Get(Localizer.Format("#LOC_GRAPES_1")).amount;
                     }
                 }
 
-                if (part.Resources.Contains("Oxidizer"))
+                if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_2")))
                 {
-                    if (part.Resources.Get("Oxidizer").amount < part.Resources.Get("Oxidizer").maxAmount)
+                    if (part.Resources.Get(Localizer.Format("#LOC_GRAPES_2")).amount < part.Resources.Get(Localizer.Format("#LOC_GRAPES_2")).maxAmount)
                     {
-                        Instance.oDif += part.Resources.Get("Oxidizer").maxAmount - part.Resources.Get("Oxidizer").amount;
+                        Instance.oDif += part.Resources.Get(Localizer.Format("#LOC_GRAPES_2")).maxAmount - part.Resources.Get(Localizer.Format("#LOC_GRAPES_2")).amount;
                     }
                 }
 
-                if (part.Resources.Contains("MonoPropellant"))
+                if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_3")))
                 {
-                    if (part.Resources.Get("MonoPropellant").amount < part.Resources.Get("MonoPropellant").maxAmount)
+                    if (part.Resources.Get(Localizer.Format("#LOC_GRAPES_3")).amount < part.Resources.Get(Localizer.Format("#LOC_GRAPES_3")).maxAmount)
                     {
-                        Instance.mDif += part.Resources.Get("MonoPropellant").maxAmount - part.Resources.Get("MonoPropellant").amount;
+                        Instance.mDif += part.Resources.Get(Localizer.Format("#LOC_GRAPES_3")).maxAmount - part.Resources.Get(Localizer.Format("#LOC_GRAPES_3")).amount;
                     }
                 }
 
-                if (part.Resources.Contains("XenonGas"))
+                if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_4")))
                 {
-                    if (part.Resources.Get("XenonGas").amount < part.Resources.Get("XenonGas").maxAmount)
+                    if (part.Resources.Get(Localizer.Format("#LOC_GRAPES_4")).amount < part.Resources.Get(Localizer.Format("#LOC_GRAPES_4")).maxAmount)
                     {
-                        Instance.xDif += part.Resources.Get("XenonGas").maxAmount - part.Resources.Get("XenonGas").amount;
+                        Instance.xDif += part.Resources.Get(Localizer.Format("#LOC_GRAPES_4")).maxAmount - part.Resources.Get(Localizer.Format("#LOC_GRAPES_4")).amount;
                     }
                 }
 
@@ -212,11 +213,11 @@ namespace GasRepairsAndProbablyExpensiveSnacks
 
             foreach (var part in FlightGlobals.ActiveVessel.Parts)
             {
-                if (part.Resources.Contains("ElectricCharge"))
+                if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_5")))
                 {
-                    if (part.Resources.Get("ElectricCharge").amount < part.Resources.Get("ElectricCharge").maxAmount)
+                    if (part.Resources.Get(Localizer.Format("#LOC_GRAPES_5")).amount < part.Resources.Get(Localizer.Format("#LOC_GRAPES_5")).maxAmount)
                     {
-                        batDif += part.Resources.Get("ElectricCharge").maxAmount - part.Resources.Get("ElectricCharge").amount;
+                        batDif += part.Resources.Get(Localizer.Format("#LOC_GRAPES_5")).maxAmount - part.Resources.Get(Localizer.Format("#LOC_GRAPES_5")).amount;
                     }
                 }
             }
@@ -278,21 +279,21 @@ namespace GasRepairsAndProbablyExpensiveSnacks
 
                 foreach (var part in FlightGlobals.ActiveVessel.Parts)
                 {
-                    if (part.Resources.Contains("LiquidFuel"))
+                    if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_1")))
                     {
-                        part.Resources.Get("LiquidFuel").amount = part.Resources.Get("LiquidFuel").maxAmount;
+                        part.Resources.Get(Localizer.Format("#LOC_GRAPES_1")).amount = part.Resources.Get(Localizer.Format("#LOC_GRAPES_1")).maxAmount;
                     }
-                    if (part.Resources.Contains("Oxidizer"))
+                    if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_2")))
                     {
-                        part.Resources.Get("Oxidizer").amount = part.Resources.Get("Oxidizer").maxAmount;
+                        part.Resources.Get(Localizer.Format("#LOC_GRAPES_2")).amount = part.Resources.Get(Localizer.Format("#LOC_GRAPES_2")).maxAmount;
                     }
-                    if (part.Resources.Contains("MonoPropellant"))
+                    if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_3")))
                     {
-                        part.Resources.Get("MonoPropellant").amount = part.Resources.Get("MonoPropellant").maxAmount;
+                        part.Resources.Get(Localizer.Format("#LOC_GRAPES_3")).amount = part.Resources.Get(Localizer.Format("#LOC_GRAPES_3")).maxAmount;
                     }
-                    if (part.Resources.Contains("XenonGas"))
+                    if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_4")))
                     {
-                        part.Resources.Get("XenonGas").amount = part.Resources.Get("XenonGas").maxAmount;
+                        part.Resources.Get(Localizer.Format("#LOC_GRAPES_4")).amount = part.Resources.Get(Localizer.Format("#LOC_GRAPES_4")).maxAmount;
                     }
                 }
 
@@ -309,21 +310,21 @@ namespace GasRepairsAndProbablyExpensiveSnacks
 
                 foreach (var part in FlightGlobals.ActiveVessel.Parts)
                 {
-                    if (part.Resources.Contains("LiquidFuel"))
+                    if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_1")))
                     {
-                        part.Resources.Get("LiquidFuel").amount = (part.Resources.Get("LiquidFuel").maxAmount / 100) * fuelToAdd;
+                        part.Resources.Get(Localizer.Format("#LOC_GRAPES_1")).amount = (part.Resources.Get(Localizer.Format("#LOC_GRAPES_1")).maxAmount / 100) * fuelToAdd;
                     }
-                    if (part.Resources.Contains("Oxidizer"))
+                    if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_2")))
                     {
-                        part.Resources.Get("Oxidizer").amount = (part.Resources.Get("Oxidizer").maxAmount / 100) * fuelToAdd;
+                        part.Resources.Get(Localizer.Format("#LOC_GRAPES_2")).amount = (part.Resources.Get(Localizer.Format("#LOC_GRAPES_2")).maxAmount / 100) * fuelToAdd;
                     }
-                    if (part.Resources.Contains("MonoPropellant"))
+                    if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_3")))
                     {
-                        part.Resources.Get("MonoPropellant").amount = (part.Resources.Get("MonoPropellant").maxAmount / 100) * fuelToAdd;
+                        part.Resources.Get(Localizer.Format("#LOC_GRAPES_3")).amount = (part.Resources.Get(Localizer.Format("#LOC_GRAPES_3")).maxAmount / 100) * fuelToAdd;
                     }
-                    if (part.Resources.Contains("XenonGas"))
+                    if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_4")))
                     {
-                        part.Resources.Get("XenonGas").amount = (part.Resources.Get("XenonGas").maxAmount / 100) * fuelToAdd;
+                        part.Resources.Get(Localizer.Format("#LOC_GRAPES_4")).amount = (part.Resources.Get(Localizer.Format("#LOC_GRAPES_4")).maxAmount / 100) * fuelToAdd;
                     }
                 }
 
@@ -353,9 +354,9 @@ namespace GasRepairsAndProbablyExpensiveSnacks
 
                 foreach (var part in FlightGlobals.ActiveVessel.Parts)
                 {
-                    if (part.Resources.Contains("ElectricCharge"))
+                    if (part.Resources.Contains(Localizer.Format("#LOC_GRAPES_5")))
                     {
-                        part.Resources.Get("ElectricCharge").amount = part.Resources.Get("ElectricCharge").maxAmount;
+                        part.Resources.Get(Localizer.Format("#LOC_GRAPES_5")).amount = part.Resources.Get(Localizer.Format("#LOC_GRAPES_5")).maxAmount;
                     }
                 }
 

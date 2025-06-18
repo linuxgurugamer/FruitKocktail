@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -26,15 +27,15 @@ namespace PotentiallyReallyUsefulNewEditorSorter
         }
 
 
-        public override string Title { get { return "PRUNES Options"; } }
+        public override string Title { get { return Localizer.Format("#LOC_PRUNES_1"); } }
         public override GameParameters.GameMode GameMode { get { return GameParameters.GameMode.ANY; } }
-        public override string Section { get { return "PRUNES"; } }
-        public override string DisplaySection { get { return "PRUNES"; } }
+        public override string Section { get { return Localizer.Format("#LOC_PRUNES_2"); } }
+        public override string DisplaySection { get { return Localizer.Format("#LOC_PRUNES_2"); } }
         public override int SectionOrder { get { return 1; } }
         public override bool HasPresets { get { return true; } }
 
         [GameParameters.CustomStringParameterUI("Options", autoPersistance = true, lines = 2, 
-            title = "Choose Your Editor Sort Options")]
+            title = "#LOC_PRUNES_3")]
         public string optStr = "";
 
         [GameParameters.CustomParameterUI("Editor Sort By")]
@@ -50,9 +51,10 @@ namespace PotentiallyReallyUsefulNewEditorSorter
 
         public override bool Enabled(MemberInfo member, GameParameters parameters)
         {
+            #region NO_LOCALIZATION
             if (member.Name == "EnabledForSave")
                 return true;
-
+            #endregion
             return true;
         }
 

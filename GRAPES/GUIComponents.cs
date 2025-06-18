@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections;
-using System.Linq;
-using System.Text;
-using KSP.UI;
-using KSP.UI.Screens;
-using UnityEngine;
-using UnityEngine.UI;
-
-using ToolbarControl_NS;
+using KSP.Localization;
 using ClickThroughFix;
+using KSP.UI.Screens;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using ToolbarControl_NS;
+using UnityEngine;
 
 namespace GasRepairsAndProbablyExpensiveSnacks
 {
@@ -91,6 +87,7 @@ namespace GasRepairsAndProbablyExpensiveSnacks
                 guiPos = new Rect(menuPR, menuSR);
                 rates = GasStation.ProvidePrices();
 
+                #region NO_LOCALIZATION
                 if (toolbarControl == null)
                 {
                     toolbarControl = gameObject.AddComponent<ToolbarControl>();
@@ -107,9 +104,11 @@ namespace GasRepairsAndProbablyExpensiveSnacks
                     toolbarControl.SetTexture("FruitKocktail/GRAPES/PluginData/Icons/grapesoff-38",
                         "FruitKocktail/GRAPES/PluginData/Icons/grapesoff-24");
                 }
+                #endregion
+
                 if (!isAwaitingDelivery)
                 {
-                    statusStringToReturn = "Awaiting Your Order";
+                    statusStringToReturn = Localizer.Format("#LOC_GRAPES_6");
                 }
                 GameEvents.onHideUI.Add(OnHideUI);
                 GameEvents.onShowUI.Add(OnShowUI);
@@ -146,14 +145,14 @@ namespace GasRepairsAndProbablyExpensiveSnacks
                 {
                     // instantiate the menu
                     guiPos = ClickThruBlocker.GUILayoutWindow(123456, guiPos, MenuWindow,
-                        "Current Prices", new GUIStyle(HighLogic.Skin.window));
+                        Localizer.Format("#LOC_GRAPES_7"), new GUIStyle(HighLogic.Skin.window));
                     toolbarControl.SetTrue();
 
                 }
             }
             else
             {
-                ScreenMessage screenMessage = new ScreenMessage("You are not in orbit!", 3F, ScreenMessageStyle.UPPER_CENTER);
+                ScreenMessage screenMessage = new ScreenMessage(Localizer.Format("#LOC_GRAPES_8"), 3F, ScreenMessageStyle.UPPER_CENTER);
                 ScreenMessages.PostScreenMessage(screenMessage);
                 toolbarControl.SetFalse();
             }
@@ -170,43 +169,43 @@ namespace GasRepairsAndProbablyExpensiveSnacks
             GUILayout.BeginHorizontal();
 
             GUILayout.Space(20);
-            GUILayout.Label("Liquid Fuel/Oxidiser = " + rates[0].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_9") + rates[0].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            GUILayout.Label("Liquid Fuel = " + rates[1].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_10") + rates[1].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            GUILayout.Label("Oxidiser = " + rates[2].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_11") + rates[2].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            GUILayout.Label("MonoPropellant = " + rates[3].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_12") + rates[3].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            GUILayout.Label("Xenon = " + rates[4].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_13") + rates[4].ToString("0.00"), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            GUILayout.Label("Recharge Service = " + GetRechargeAbility(), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_14") + GetRechargeAbility(), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            GUILayout.Label("Repair Service = " + GetRepairAbility(), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_15") + GetRepairAbility(), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
             GUILayout.Space(40);
@@ -218,39 +217,39 @@ namespace GasRepairsAndProbablyExpensiveSnacks
             GUILayout.BeginHorizontal();
 
             GUILayout.Space(20);
-            GUILayout.Label("Cost To Fill Up = " + GetFillUpCost(), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_16") + GetFillUpCost(), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            GUILayout.Label("Your Available Credit = " + GetCredit(), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_17") + GetCredit(), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
             GUILayout.Space(10);
 
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            GUILayout.Label("Station Status = " + LabelStatus(), new GUIStyle(HighLogic.Skin.label));
+            GUILayout.Label(Localizer.Format("#LOC_GRAPES_18") + LabelStatus(), new GUIStyle(HighLogic.Skin.label));
             GUILayout.Space(20);
             GUILayout.EndHorizontal();
 
             GUILayout.EndArea();
 
             GUILayout.BeginHorizontal();
-            refuelBtn = GUI.Button(new Rect(40, 350, 320, 25), "Request Fuel", new GUIStyle(HighLogic.Skin.button));
+            refuelBtn = GUI.Button(new Rect(40, 350, 320, 25), Localizer.Format("#LOC_GRAPES_19"), new GUIStyle(HighLogic.Skin.button));
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
-            rechargeBtn = GUI.Button(new Rect(40, 375, 320, 25), "Request Recharge", new GUIStyle(HighLogic.Skin.button));
+            rechargeBtn = GUI.Button(new Rect(40, 375, 320, 25), Localizer.Format("#LOC_GRAPES_20"), new GUIStyle(HighLogic.Skin.button));
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
-            repairBtn = GUI.Button(new Rect(40, 400, 320, 25), "Request Repair", new GUIStyle(HighLogic.Skin.button));
+            repairBtn = GUI.Button(new Rect(40, 400, 320, 25), Localizer.Format("#LOC_GRAPES_21"), new GUIStyle(HighLogic.Skin.button));
             GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
-            closeBtn = GUI.Button(new Rect(40, 425, 320, 25), "Cancel/Close", new GUIStyle(HighLogic.Skin.button));
+            closeBtn = GUI.Button(new Rect(40, 425, 320, 25), Localizer.Format("#LOC_GRAPES_22"), new GUIStyle(HighLogic.Skin.button));
             GUILayout.EndHorizontal();
 
 
@@ -315,17 +314,15 @@ namespace GasRepairsAndProbablyExpensiveSnacks
 
             if (atStation)
             {
-                toolbarControl.SetTexture("FruitKocktail/GRAPES/PluginData/Icons/grapeson-38",
-                    "FruitKocktail/GRAPES/PluginData/Icons/grapeson-24");
+                toolbarControl.SetTexture("FruitKocktail/GRAPES/PluginData/Icons/grapeson-38", "FruitKocktail/GRAPES/PluginData/Icons/grapeson-24");
             }
         }
 
         public void onFalse()
         {
             // ie when clicked off
-                toolbarControl.SetTexture("FruitKocktail/GRAPES/PluginData/Icons/grapesoff-38",
-                    "FruitKocktail/GRAPES/PluginData/Icons/grapesoff-24");
-                btnIsPressed = false;
+            toolbarControl.SetTexture("FruitKocktail/GRAPES/PluginData/Icons/grapesoff-38", "FruitKocktail/GRAPES/PluginData/Icons/grapesoff-24");
+            btnIsPressed = false;
         }
 
 
@@ -350,7 +347,7 @@ namespace GasRepairsAndProbablyExpensiveSnacks
             if (grabbedPrice == 0)
             {
                 canRefuel = false;
-                return "All Tanks Full!";
+                return Localizer.Format("#LOC_GRAPES_23");
             }
 
             else
@@ -372,7 +369,7 @@ namespace GasRepairsAndProbablyExpensiveSnacks
             {
                 canRecharge = false;
                 canRefuel = false;
-                return "All Cards Are Empty!";
+                return Localizer.Format("#LOC_GRAPES_24");
             }
 
             else
@@ -408,18 +405,18 @@ namespace GasRepairsAndProbablyExpensiveSnacks
             if (daysRem == 0)
             {
                 instance.isAwaitingDelivery = false;
-                statusStringToReturn = "Awaiting Your Order";
+                statusStringToReturn = Localizer.Format("#LOC_GRAPES_6");
                 return statusStringToReturn;
             }
 
             else if (daysRem == 1)
             {
-                return "Delivery Due Tomorrow";
+                return Localizer.Format("#LOC_GRAPES_25");
             }
 
             else
             {
-                return "Next Delivery In " + daysRem + " Days";
+                return Localizer.Format("#LOC_GRAPES_26") + daysRem + Localizer.Format("#LOC_GRAPES_27");
             }
 
         }
@@ -437,7 +434,7 @@ namespace GasRepairsAndProbablyExpensiveSnacks
 
             else
             {
-                return "N/A";
+                return Localizer.Format("#LOC_GRAPES_28");
             }
 
         }
@@ -446,7 +443,7 @@ namespace GasRepairsAndProbablyExpensiveSnacks
         private static string GetRepairAbility()
         {
 
-            return "N/A";
+            return Localizer.Format("#LOC_GRAPES_28");
 
         }
 
@@ -459,7 +456,7 @@ namespace GasRepairsAndProbablyExpensiveSnacks
 
                 if (code == 4)
                 {
-                    statusStringToReturn = "Recharge complete!, come again soon!";
+                    statusStringToReturn = Localizer.Format("#LOC_GRAPES_29");
                     LabelStatus();
                 }
 
@@ -476,11 +473,11 @@ namespace GasRepairsAndProbablyExpensiveSnacks
 
                 if (code == 1)
                 {
-                    statusStringToReturn = "All tanks now full, come again soon!";
+                    statusStringToReturn = Localizer.Format("#LOC_GRAPES_30");
                 }
                 else if (code == 2)
                 {
-                    statusStringToReturn = "Part refill complete, come again soon!";
+                    statusStringToReturn = Localizer.Format("#LOC_GRAPES_31");
                 }
 
                 LabelStatus();

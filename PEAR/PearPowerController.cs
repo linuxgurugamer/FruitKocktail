@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace ProgramaticExtensionAndRetraction
         }
 
         [KSPField(guiActive = true, guiActiveEditor = true, guiName = "PEAR Status", isPersistant = false)]
-        public string pearStatus = "Active";
+        public string pearStatus = "#LOC_PEAR_2";
 
         [KSPField(isPersistant = true)]
         public bool isPowerOn = true;

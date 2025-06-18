@@ -1,0 +1,54 @@
+﻿PART
+{
+	
+	name = FuelCard
+	module = Part
+	author = FruitGoose
+	
+	
+	MODEL
+	{
+		model = FruitKocktail/GRAPES/Parts/Assets/fuelcard
+	}
+	
+	rescaleFactor = 2.0
+	
+	TechRequired = specializedConstruction
+	entryCost = 1000
+	cost = 1000
+	category = Utility
+	subcategory = 0
+	title = Fuel Card
+	manufacturer = Uranus Gas
+	description = A fuel purchasing card. To purchase fuel with. Who knew?
+	
+	// attachment rules: stack, srfAttach, allowStack, allowSrfAttach, allowCollision
+	attachRules = 0,1,0,0,1
+	
+	node_attach = 0.0, 0.0, 0.025, 0.0, 0.0, -1.0
+	
+	mass = 0.001
+	PhysicsSignificance = 1
+	dragModelType = none
+	maximum_drag = 0.0
+	minimum_drag = 0.0
+	angularDrag = 0
+	crashTolerance = 12
+	maxTemp = 2000 
+	bulkheadProfiles = srf
+	tags = fuelcard grapes fruitkocktail gasstation refuel
+
+
+	MODULE
+	{
+		name = FuelCard
+		availableCredit = 1000
+	}
+	
+	MODULE
+	{
+		name = ModuleCargoPart
+		packedVolume = 1
+	}
+
+}

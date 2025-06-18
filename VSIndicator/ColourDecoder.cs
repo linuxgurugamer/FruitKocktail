@@ -1,4 +1,5 @@
-﻿using System;
+using KSP.Localization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,25 +48,25 @@ namespace VSIndicator
             switch (code)
             {
                 case 0:
-                    return "Green";
+                    return Localizer.Format("#LOC_VSIndicator_1");
                 case 1:
-                    return "Red";
+                    return Localizer.Format("#LOC_VSIndicator_2");
                 case 2:
-                    return "Orange";
+                    return Localizer.Format("#LOC_VSIndicator_3");
                 case 3:
-                    return "Yellow";
+                    return Localizer.Format("#LOC_VSIndicator_4");
                 case 4:
-                    return "Cyan";
+                    return Localizer.Format("#LOC_VSIndicator_5");
                 case 5:
-                    return "Blue";
+                    return Localizer.Format("#LOC_VSIndicator_6");
                 case 6:
-                    return "Magenta";
+                    return Localizer.Format("#LOC_VSIndicator_7");
                 case 7:
-                    return "Pink";
+                    return Localizer.Format("#LOC_VSIndicator_8");
                 case 8:
-                    return "White";
+                    return Localizer.Format("#LOC_VSIndicator_9");
                 default:
-                    return "Green";
+                    return Localizer.Format("#LOC_VSIndicator_1");
             }
 
 
